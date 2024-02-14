@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- org.
 require("options")
-require("commands")
 require("mappings")
 require("lazy").setup("plugins")
 require("colorscheme")
