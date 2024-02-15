@@ -45,4 +45,4 @@ map("n", "<leader>nh", "<cmd> NoiceHistory <cr>", { desc = "Noice history" })
 map("n", "<leader>nt", "<cmd> NoiceTelescope <cr>", { desc = "Noice telescope" })
 
 -- lazygit
-map("n", "<leader>lg", "<cmd> LazyGit <cr>", { desc = "LazyGit" })
+map("n", "<leader>lg", "<cmd> Telescope lazygit <cr>", { desc = "LazyGit" })
