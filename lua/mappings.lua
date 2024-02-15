@@ -27,7 +27,8 @@ map("v", "<leader>/", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.
 
 -- telescope
 map("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
-map("n", "<leader>ff", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find files" })
+map("n", "<leader>fa", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find all files" })
+map("n", "<leader>ff", "<cmd> Telescope find_files <cr>", { desc = "Find files" })
 map("n", "<leader>fo", "<cmd> Telescope oldfiles <cr>", { desc = "Recent files" })
 map("n", "<leader>fs", "<cmd> Telescope grep_string <cr>", { desc = "String search" })
 map("n", "<leader>fw", "<cmd> Telescope live_grep <cr>", { desc = "Live text search" })
