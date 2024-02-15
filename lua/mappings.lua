@@ -43,3 +43,6 @@ map("n", "<C-n>", "<cmd> Neotree toggle <cr>")
 map("n", "<leader>nd", "<cmd> NoiceDismiss <cr>", { desc = "Noice dismiss" })
 map("n", "<leader>nh", "<cmd> NoiceHistory <cr>", { desc = "Noice history" })
 map("n", "<leader>nt", "<cmd> NoiceTelescope <cr>", { desc = "Noice telescope" })
+
+-- lazygit
+map("n", "<leader>lg", "<cmd> LazyGit <cr>", { desc = "LazyGit" })
