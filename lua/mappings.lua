@@ -26,17 +26,15 @@ end)
 map("v", "<leader>/", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>")
 
 -- telescope
-map("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "Telescope buffers" })
-map("n", "<leader>ff", "<cmd> Telescope find_files <cr>", { desc = "Telescope find files" })
-map("n", "<leader>fa", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Telescope find all files" })
-map("n", "<leader>fo", "<cmd> Telescope oldfiles <cr>", { desc = "Telescope recent files" })
-map("n", "<leader>fs", "<cmd> Telescope grep_string <cr>", { desc = "Telescope string grep" })
-map("n", "<leader>fw", "<cmd> Telescope live_grep <cr>", { desc = "Telescope grep" })
-map("n", "<leader>fz", "<cmd> Telescope current_buffer_fuzzy_find <cr>", { desc = "Telescope current buffer grep" })
-map("n", "<leader>gs", "<cmd> Telescope git_status <cr>", { desc = "Telescope git status" })
+map("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
+map("n", "<leader>ff", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find files" })
+map("n", "<leader>fo", "<cmd> Telescope oldfiles <cr>", { desc = "Recent files" })
+map("n", "<leader>fs", "<cmd> Telescope grep_string <cr>", { desc = "String search" })
+map("n", "<leader>fw", "<cmd> Telescope live_grep <cr>", { desc = "Live text search" })
+map("n", "<leader>fz", "<cmd> Telescope current_buffer_fuzzy_find <cr>", { desc = "Current buffer text search" })
 
 map("n", "<leader>tb", "<cmd> Telescope <cr>", { desc = "Telescope" })
-map("n", "<leader>tc", "<cmd> Telescope colorscheme <cr>", { desc = "Telescope colorschemes" })
+map("n", "<leader>tc", "<cmd> Telescope colorscheme <cr>", { desc = "Colorschemes" })
 
 -- neotree
 map("n", "<C-n>", "<cmd> Neotree toggle <cr>")
