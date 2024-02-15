@@ -47,3 +47,7 @@ map("n", "<leader>nt", "<cmd> NoiceTelescope <cr>", { desc = "Noice telescope" }
 
 -- lazygit
 map("n", "<leader>lg", "<cmd> LazyGit <cr>", { desc = "LazyGit" })
+
+-- oil
+map("n", "-", "<cmd> Oil <cr>", { desc = "Open parent directory" })
+
