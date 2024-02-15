@@ -41,11 +41,6 @@ map("n", "<leader>tc", "<cmd> Telescope colorscheme <cr>", { desc = "Telescope c
 -- neotree
 map("n", "<C-n>", "<cmd> Neotree toggle <cr>")
 
--- format
-map("n", "<leader>fm", function()
-	require("conform").format()
-end)
-
 -- noice
 map("n", "<leader>nd", "<cmd> NoiceDismiss <cr>", { desc = "Noice dismiss" })
 map("n", "<leader>nh", "<cmd> NoiceHistory <cr>", { desc = "Noice history" })
