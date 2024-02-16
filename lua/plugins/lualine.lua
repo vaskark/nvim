@@ -42,7 +42,7 @@ return {
         lualine_z = {},
       },
       tabline = {
-        lualine_z = { { "datetime", style = "%-I:%M%p" } },
+        -- lualine_z = { { "datetime", style = "%-I:%M%p" } },
       },
       winbar = {},
       inactive_winbar = {},
