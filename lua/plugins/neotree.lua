@@ -8,7 +8,5 @@ return {
 		"MunifTanjim/nui.nvim",
 		"3rd/image.nvim",
 	},
-
-  vim.keymap.set("n", "<C-n>", "<cmd> Neotree toggle <cr>")
-
+	vim.keymap.set("n", "<C-n>", "<cmd> Neotree toggle <cr>"),
 }
