@@ -1,5 +1,5 @@
 -- default
-vim.cmd.colorscheme("bamboo")
+vim.cmd.colorscheme("rosebones")
 
 -- lushwal config (should be moved elsewhere?)
 vim.g.lushwal_configuration = {
@@ -27,7 +27,7 @@ vim.g.lushwal_configuration = {
 		neogit = false,
 		neomake = false,
 		nerdtree = false,
-		nvim_cmp = false,
+		nvim_cmp = true,
 		nvim_tree_lua = false,
 		nvim_ts_rainbow = false,
 		semshi = false,
