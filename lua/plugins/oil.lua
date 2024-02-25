@@ -14,7 +14,7 @@ return {
 					return conf
 				end,
 			},
+			vim.keymap.set("n", "-", "<cmd> Oil <cr>", { desc = "Open parent directory" }),
 		})
-		vim.keymap.set("n", "-", "<cmd> Oil <cr>", { desc = "Open parent directory" })
 	end,
 }
