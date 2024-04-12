@@ -8,6 +8,6 @@ return {
 				null_ls.builtins.formatting.stylua,
 			},
 		})
-		vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, { desc = "Format" })
+		vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, { desc = "Code format" })
 	end,
 }
