@@ -1,10 +1,10 @@
 return {
 
-  "rose-pine/neovim",
-  name = "rose-pine",
-  opts = {
-    styles = {
-      transparency = true,
-    },
-  },
+	"rose-pine/neovim",
+	name = "rose-pine",
+	opts = {
+		styles = {
+			transparency = true,
+		},
+	},
 }
