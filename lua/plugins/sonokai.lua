@@ -1,7 +1,8 @@
 return {
 
 	"sainnhe/sonokai",
-	config = function()
-		-- vim.cmd.sonokai_style = "espresso"
-	end,
+	priority = 1000,
+	opts = {
+		sonakai_style = "default", -- default, atlantis, andromeda, shusia, maia, expresso
+	},
 }
