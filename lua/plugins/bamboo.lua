@@ -4,7 +4,7 @@ return {
 	priority = 1000,
   config = function()
     require('bamboo').setup({
-      toggle_style_key = "<leader>bs",
+      toggle_style_key = "nil",
 			lualine = {
 				transparent = true,
 			},
