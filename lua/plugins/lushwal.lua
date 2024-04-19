@@ -1,5 +1,4 @@
 return {
-
 	"oncomouse/lushwal.nvim",
 	cmd = { "LushwalCompile" },
 	dependencies = {

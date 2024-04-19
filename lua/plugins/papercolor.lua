@@ -1,4 +1,3 @@
 return {
-
 	"NLKNguyen/papercolor-theme",
 }

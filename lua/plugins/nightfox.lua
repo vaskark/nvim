@@ -1,5 +1,4 @@
 return {
-
   "EdenEast/nightfox.nvim",
   opts = {
     options = {

@@ -1,5 +1,4 @@
 return {
-
   "NeogitOrg/neogit",
   branch = "nightly",
   dependencies = {
