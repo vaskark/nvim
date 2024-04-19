@@ -1,13 +1,13 @@
 return {
   "EdenEast/nightfox.nvim",
-  opts = {
-    options = {
-      transparent = true,
-      module_default = true,
-      colorblind = {
-        enable = false,
+  config = function()
+    require("nightfox").setup({
+      options = {
+        transparent = true,
+        colorblind = {
+          enable = false,
+        },
       },
-      modules = {},
-    },
-  },
+    })
+  end,
 }
