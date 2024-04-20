@@ -14,24 +14,25 @@ return {
 			highlight = {
 				enable = true,
 			},
-			indent = { enable = true },
+			indent = {
+				enable = true,
+			},
 			autotag = {
 				enable = true,
 			},
 			ensure_installed = {
 				"bash",
-				"regex",
+				"gitignore",
 				"json",
-				"toml",
-				"yaml",
+				"lua",
 				"markdown",
 				"markdown_inline",
-				"bash",
-				"lua",
+				"query",
+				"regex",
+				"toml",
 				"vim",
 				"vimdoc",
-				"gitignore",
-				"query",
+				"yaml",
 			},
 			incremental_selection = {
 				enable = true,
