@@ -1,34 +1,31 @@
 return {
-	{
-		"williamboman/mason.nvim",
-		lazy = false,
-		config = function()
-			require("mason").setup()
-		end,
-	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-		lazy = false,
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls" },
-			})
-		end,
-	},
-	{
-		"neovim/nvim-lspconfig",
-		lazy = false,
-		config = function()
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+  "williamboman/mason.nvim",
+  dependencies = {
+    "williamboman/mason-lspconfig.nvim",
+  },
+  config = function()
+    -- import mason
+    local mason = require("mason")
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
+    -- import mason-lspconfig
+    local mason_lspconfig = require("mason-lspconfig")
 
-			vim.keymap.set("n", "<S-k>", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
-		end,
-	},
+    -- enable mason and configure icons
+    mason.setup({
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
+      },
+    })
+
+    mason_lspconfig.setup({
+      -- list of servers for mason to install
+      ensure_installed = {
+        "lua_ls",
+      },
+    })
+  end,
 }
