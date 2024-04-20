@@ -22,7 +22,6 @@ return {
 			},
 			ensure_installed = {
 				"bash",
-				"gitignore",
 				"json",
 				"lua",
 				"markdown",
