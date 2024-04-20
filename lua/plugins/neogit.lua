@@ -7,5 +7,5 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   config = true,
-  vim.keymap.set("n", "<leader>gn", "<cmd> Neogit <cr>"),
+  vim.keymap.set("n", "<leader>ng", "<cmd> Neogit <cr>"),
 }
