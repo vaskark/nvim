@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("fluoromachine").setup({
 			glow = false,
-			theme = "retrowave", --fluoromachine, retrowave, delta
+			theme = "retrowave", -- fluoromachine, retrowave, delta
 			transparent = "full",
 		})
 	end,
