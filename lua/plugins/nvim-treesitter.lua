@@ -7,10 +7,10 @@ return {
 	},
 	config = function()
 		require("nvim-treesitter.configs").setup({
-			modules = {},
-			sync_install = false,
-			ignore_install = {},
 			auto_install = false,
+			sync_install = false,
+			modules = {},
+			ignore_install = {},
 			highlight = {
 				enable = true,
 			},
