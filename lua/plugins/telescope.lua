@@ -8,6 +8,10 @@ return {
 			"nvim-tree/nvim-web-devicons",
 			"nvim-telescope/telescope-ui-select.nvim",
 			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+			{
+				"nvim-telescope/telescope-file-browser.nvim",
+				dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+			},
 		},
 		config = function()
 			require("telescope").setup({
@@ -28,8 +32,9 @@ return {
 					},
 				},
 			})
-			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("fzf")
+			require("telescope").load_extension("ui-select")
+			require("telescope").load_extension("file_browser")
 
 			vim.keymap.set("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
 			vim.keymap.set(
