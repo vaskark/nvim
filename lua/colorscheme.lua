@@ -17,7 +17,7 @@ vim.cmd.colorscheme("rosebones")
 -- 		which_key_nvim = true,
 -- 	},
 -- }
-
+--
 -- require("lushwal").add_reload_hook({
 -- 	vim.cmd("LushwalCompile"),
 -- })

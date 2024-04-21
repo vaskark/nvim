@@ -5,8 +5,8 @@ return {
 	config = function()
 		require("solarized").setup({
 			palette = "solarized", -- solarized, selenized
+			theme = "solarized", -- default, neo
 			transparent = true,
-			theme = "default", -- default, neo
 		})
 	end,
 }
