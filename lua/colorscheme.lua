@@ -1,5 +1,5 @@
 -- default
-vim.cmd.colorscheme("rosebones")
+vim.cmd([[colorscheme rosebones]])
 
 -- lushwal
 -- vim.g.lushwal_configuration = {
