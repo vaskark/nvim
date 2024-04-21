@@ -1,13 +1,11 @@
 return {
-	"Mofiqul/dracula.nvim",
+	"maxmx03/dracula.nvim",
+	lazy = false,
+	priority = 1000,
 	config = function()
 		local dracula = require("dracula")
 		dracula.setup({
-			colors = {},
-			italic_comment = false,
-			overrides = {},
-			show_end_of_buffer = false,
-			transparent_bg = true,
+			transparent = true,
 		})
 	end,
 }
