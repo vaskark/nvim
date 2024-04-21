@@ -1,7 +1,8 @@
 return {
 	"Mofiqul/dracula.nvim",
 	config = function()
-		require("dracula").setup({
+		local dracula = require("dracula")
+		dracula.setup({
 			colors = {},
 			italic_comment = false,
 			overrides = {},
