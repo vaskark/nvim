@@ -2,3 +2,4 @@ lazy-lock.json
 .luarc.json
 colors/*
 lua/lualine/themes/*
+lua/colorscheme.lua
