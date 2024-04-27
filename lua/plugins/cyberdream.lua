@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	config = function()
 		require("cyberdream").setup({
-			transparent = true,
+			transparent = false,
 			hide_fillchars = true,
 			borderless_telescope = false,
 		})
