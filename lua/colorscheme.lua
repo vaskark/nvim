@@ -1,5 +1,5 @@
 -- default
-vim.cmd([[colorscheme rosebones]])
+vim.cmd("colorscheme rosebones")
 
 -- lushwal
 -- require("lushwal").add_reload_hook({
