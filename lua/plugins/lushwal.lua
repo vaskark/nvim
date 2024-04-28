@@ -16,7 +16,6 @@ return {
 				native_lsp = true,
 				neogit = false,
 				nvim_cmp = true,
-				nvim_tree_lua = true,
 				telescope_nvim = true,
 				treesitter = true,
 				which_key_nvim = true,
