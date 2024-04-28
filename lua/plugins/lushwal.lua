@@ -13,7 +13,6 @@ return {
 				lualine = true,
 				markdown = true,
 				mini_nvim = true,
-				native_lsp = true,
 				neogit = false,
 				nvim_cmp = true,
 				telescope_nvim = true,
