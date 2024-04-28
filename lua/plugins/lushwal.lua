@@ -5,4 +5,22 @@ return {
 		{ "rktjmp/lush.nvim" },
 		{ "rktjmp/shipwright.nvim" },
 	},
+	config = function()
+		vim.g.lushwal_configuration = {
+			addons = {
+				gitsigns_nvim = true,
+				indent_blankline_nvim = true,
+				lualine = true,
+				markdown = true,
+				mini_nvim = true,
+				native_lsp = true,
+				neogit = false,
+				nvim_cmp = true,
+				nvim_tree_lua = true,
+				telescope_nvim = true,
+				treesitter = true,
+				which_key_nvim = true,
+			},
+		}
+	end,
 }
