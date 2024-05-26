@@ -5,7 +5,9 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			transparent_background = true,
+			default_integrations = true,
 			integrations = {
+				diffview = true,
 				mason = true,
 				neotree = true,
 				noice = true,
