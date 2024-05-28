@@ -8,6 +8,12 @@ return {
 	},
 	config = function()
 		require("neogit").setup({
+			graph_style = "unicode",
+			highlight = {
+				italic = false,
+				bold = false,
+				underline = false,
+			},
 			auto_close_console = true,
 		})
 	end,
