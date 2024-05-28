@@ -6,7 +6,10 @@ return {
 		"sindrets/diffview.nvim",
 		"nvim-telescope/telescope.nvim",
 	},
-	config = true,
-	auto_close_console = true,
+	config = function()
+		require("neogit").setup({
+			auto_close_console = true,
+		})
+	end,
 	vim.keymap.set("n", "<leader>ng", "<cmd> Neogit <cr>"),
 }
