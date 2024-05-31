@@ -16,6 +16,6 @@ return {
 			},
 			auto_close_console = true,
 		})
+		vim.keymap.set("n", "<leader>ng", "<cmd> Neogit <cr>")
 	end,
-	vim.keymap.set("n", "<leader>ng", "<cmd> Neogit <cr>"),
 }
