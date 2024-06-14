@@ -6,7 +6,6 @@ return {
 		require("cyberdream").setup({
 			transparent = true,
 			hide_fillchars = true,
-			borderless_telescope = false,
 		})
 	end,
 }
