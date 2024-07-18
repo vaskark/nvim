@@ -3,8 +3,7 @@ return {
 	lazy = false,
 	priority = 1000,
 	config = function()
-		local dracula = require("dracula")
-		dracula.setup({
+		require("dracula").setup({
 			transparent = true,
 		})
 	end,
