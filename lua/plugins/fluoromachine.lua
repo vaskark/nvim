@@ -1,10 +1,12 @@
 return {
 	"maxmx03/fluoromachine.nvim",
+	lazy = false,
+	priority = 1000,
 	config = function()
 		require("fluoromachine").setup({
-			glow = false,
+			glow = true,
 			theme = "retrowave", -- fluoromachine, retrowave, delta
-			transparent = "full",
+			transparent = true,
 		})
 	end,
 }
