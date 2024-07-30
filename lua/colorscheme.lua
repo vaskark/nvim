@@ -2,9 +2,9 @@
 vim.g.SCHEME = "rosebones"
 
 -- lushwal (if needed)
-require("lushwal").add_reload_hook({
-	vim.cmd("LushwalCompile"),
-})
+-- require("lushwal").add_reload_hook({
+-- 	vim.cmd("LushwalCompile"),
+-- })
 
 vim.api.nvim_create_autocmd("VimEnter", {
 	nested = true,
