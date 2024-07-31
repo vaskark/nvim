@@ -1,7 +1,7 @@
--- default colorscheme
+-- default
 vim.g.SCHEME = "rosebones"
 
--- lushwal (if needed)
+-- lushwal
 -- require("lushwal").add_reload_hook({
 -- 	vim.cmd("LushwalCompile"),
 -- })
