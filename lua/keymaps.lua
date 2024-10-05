@@ -30,4 +30,4 @@ map("n", "<C-k>", "<C-w>k", { desc = "Move focus to the upper window" })
 
 -- minty
 map("n", "<leader>mh", '<cmd> lua require("minty.huefy").open() <cr>', { desc = "Minty hues" })
-map("n", "<leader>ms", '<cmd> lua require("minty.shades").open() <cr>', { desc = "Minty shades" })
+map("n", "<leader>ms", '<cmd> lua require("minty.shades").open( { border = true }) <cr>', { desc = "Minty shades" })
