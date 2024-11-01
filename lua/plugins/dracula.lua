@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	config = function()
 		require("dracula").setup({
-			transparent = true,
+			transparent_bg = true,
 		})
 	end,
 }
