@@ -5,8 +5,8 @@ return {
 	---@type solarized.config
 	opts = {
 		transparent = { enabled = true },
-		palette = "solarized", -- solarized (default), selenized
-		variant = "spring", -- "spring" | "summer" | "autumn" | "winter" (default)
+		palette = "selenized", -- solarized (default), selenized
+		variant = "spring", -- winter (default), spring, summer, autumn
 	},
 	config = function(_, opts)
 		require("solarized").setup(opts)
