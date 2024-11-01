@@ -20,18 +20,17 @@ return {
 					tabline = 1000,
 					winbar = 1000,
 				},
-				-- fmt = string.lower,
 			},
 			sections = {
-				-- lualine_a = { "mode" },
-				lualine_a = {
-					{
-						"mode",
-						fmt = function(str)
-							return str:sub(1, 1)
-						end,
-					},
-				},
+				lualine_a = { "mode" },
+				-- lualine_a = {
+				-- 	{
+				-- 		"mode",
+				-- 		fmt = function(str)
+				-- 			return str:sub(1, 1)
+				-- 		end,
+				-- 	},
+				-- },
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "filename" },
 				lualine_x = {
