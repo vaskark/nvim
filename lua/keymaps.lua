@@ -31,3 +31,4 @@ map("n", "<C-k>", "<C-w>k", { desc = "Move focus to the upper window" })
 -- toggleterm
 map("n", "<leader>th", "<cmd> ToggleTerm direction=horizontal <cr>", { desc = "Horizontal terminal" })
 map("n", "<leader>tv", "<cmd> ToggleTerm direction=vertical size=50 <cr>", { desc = "Vertical terminal" })
+map("n", "<leader>tf", "<cmd> ToggleTerm direction=float <cr>", { desc = "Floating terminal" })
