@@ -14,6 +14,7 @@ return {
 					},
 				},
 			},
+			transparent = true,
 			overrides = function(colors)
 				local theme = colors.theme
 				return {
