@@ -4,9 +4,11 @@ return {
 	priority = 1000,
 	config = function()
 		require("solarized").setup({
-			palette = "solarized", -- solarized, selenized
-			theme = "solarized", -- default, neo
-			transparent = true,
+			transparent = {
+				enabled = true,
+			},
+			palette = "solarized", -- solarized (default), selenized
+			variant = "winter", -- "spring" | "summer" | "autumn" | "winter" (default)
 		})
 	end,
 }
