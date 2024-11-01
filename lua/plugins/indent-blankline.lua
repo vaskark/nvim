@@ -3,10 +3,7 @@ return {
 	main = "ibl",
 	---@module "ibl"
 	---@type ibl.config
-	opts = {
-		indent = { char = "|" },
-		scope = { enabled = true },
-	},
+	opts = {},
 	config = function()
 		require("ibl").setup()
 	end,
