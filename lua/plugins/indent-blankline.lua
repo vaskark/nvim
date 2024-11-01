@@ -5,6 +5,7 @@ return {
 	---@type ibl.config
 	opts = {
 		indent = { char = "|" },
+		scope = { enabled = true },
 	},
 	config = function()
 		require("ibl").setup()
