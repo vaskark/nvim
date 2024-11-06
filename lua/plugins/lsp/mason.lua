@@ -17,14 +17,14 @@ return {
 
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"lua_ls",
+				-- "lua_ls",
 			},
 		})
 
 		require("mason-tool-installer").setup({
 			ensure_installed = {
-				"stylua",
-				"shfmt",
+				-- "stylua",
+				-- "shfmt",
 			},
 		})
 	end,
