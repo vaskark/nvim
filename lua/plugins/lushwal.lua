@@ -14,7 +14,7 @@ return {
 				lualine = true,
 				markdown = true,
 				mini_nvim = true,
-				neogit = false,
+				neogit = true,
 				nvim_cmp = true,
 				telescope_nvim = true,
 				treesitter = true,
