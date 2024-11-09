@@ -4,6 +4,9 @@ local map = vim.keymap.set
 map("n", "<C-s>", "<cmd> w <cr>")
 map("i", "<C-s>", "<cmd> w <cr>")
 
+-- reload
+map("n", "<C-r>", "<cmd> e % <cr>", { desc = "Reload file" })
+
 -- exit insert mode
 map("i", "jk", "<esc>", { desc = "Exit insert mode" })
 
