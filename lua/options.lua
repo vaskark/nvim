@@ -8,16 +8,18 @@ opt.showmode = false
 
 opt.clipboard = "unnamedplus"
 
-opt.expandtab = true
-opt.shiftwidth = 2
-opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.smartindent = true
+opt.autoindent = true
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
+opt.hlsearch = false
 
 opt.number = true
 opt.relativenumber = true
