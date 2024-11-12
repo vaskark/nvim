@@ -3,8 +3,7 @@ local opt = vim.opt
 vim.g.mapleader = " "
 vim.g.maplocalleader = "_"
 
-opt.laststatus = 3 -- global statusline
--- opt.statusline = " %f %m %= %l:%c ♥ "
+opt.laststatus = 3
 opt.showmode = false
 
 opt.clipboard = "unnamedplus"

@@ -1,8 +1,7 @@
 local map = vim.keymap.set
 
 -- save
-map("n", "<C-s>", "<cmd> w <cr>")
-map("i", "<C-s>", "<cmd> w <cr>")
+map({ "n", "i" }, "<C-s>", "<cmd> w <cr>")
 
 -- reload
 map("n", "<C-r>", "<cmd> e % <cr>", { desc = "Reload file" })
