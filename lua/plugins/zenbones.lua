@@ -1,7 +1,6 @@
 return {
-	"mcchrish/zenbones.nvim",
+	"zenbones-theme/zenbones.nvim",
 	dependencies = "rktjmp/lush.nvim",
-	config = function()
-		vim.g.rosebones = { italic_comments = false }
-	end,
+	lazy = false,
+	priority = 1000,
 }
