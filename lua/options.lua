@@ -3,6 +3,7 @@ local opt = vim.opt
 vim.g.mapleader = " "
 vim.g.maplocalleader = "_"
 
+opt.termguicolors = true
 opt.laststatus = 3
 opt.showmode = false
 
@@ -29,7 +30,6 @@ opt.wrap = false
 opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
-opt.termguicolors = true
 opt.undofile = true
 
 opt.timeoutlen = 400
