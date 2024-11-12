@@ -22,7 +22,7 @@ map("n", "<S-Tab>", "<cmd> bprevious <cr>", { desc = "Buffer previous" })
 map("n", "<leader>bd", "<cmd> bdelete <cr>", { desc = "Buffer delete" })
 
 -- clear search highlighting
-map("n", "<esc>", "<cmd> noh <return> <esc>")
+map("n", "<esc>", "<cmd> nohlsearch <return> <esc>")
 
 -- split navigation
 map("n", "<C-h>", "<C-w>h", { desc = "Move focus to the left window" })
