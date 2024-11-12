@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "_"
 
 opt.termguicolors = true
-opt.laststatus = 3
+opt.laststatus = 2
 opt.showmode = false
 
 opt.clipboard = "unnamedplus"
