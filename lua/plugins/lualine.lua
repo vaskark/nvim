@@ -60,13 +60,6 @@ return {
 			winbar = {},
 			inactive_winbar = {},
 			extensions = { "neo-tree", "oil", "toggleterm" },
-			vim.keymap.set("n", "<leader>lh", "<cmd> lua require('lualine').hide() <cr>", { desc = "Lualine hide" }),
-			vim.keymap.set(
-				"n",
-				"<leader>ls",
-				"<cmd> lua require('lualine').hide({ unhide=true }) <cr>",
-				{ desc = "Lualine show" }
-			),
 		})
 	end,
 }
