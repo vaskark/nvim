@@ -23,7 +23,7 @@ opt.mouse = "a"
 opt.hlsearch = false
 
 opt.cursorline = true
--- opt.cursorcolumn = true
+opt.cursorcolumn = true
 
 opt.number = true
 opt.relativenumber = true
