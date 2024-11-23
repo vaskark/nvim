@@ -4,6 +4,6 @@ return {
 		require("lazyclip").setup()
 	end,
 	keys = {
-		{ "<leader>Cw", ":lua require('lazyclip').show_clipboard() <cr>", desc = "Open Clipboard Manager" },
+		{ "<leader>cw", ":lua require('lazyclip').show_clipboard() <cr>", desc = "Open Clipboard Manager" },
 	},
 }
