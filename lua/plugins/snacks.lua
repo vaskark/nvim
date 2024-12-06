@@ -24,7 +24,6 @@ return {
 		},
 		quickfile = { enabled = true },
 		statuscolumn = { enabled = true },
-		---@class snacks.terminal.Opts: snacks.terminal.Config
 		terminal = { enabled = true },
 		---@class snacks.words.Config
 		words = {
