@@ -4,7 +4,7 @@ local map = vim.keymap.set
 map({ "n", "i" }, "<C-s>", "<cmd> w <cr>")
 
 -- reload
-map("n", "<C-r>", "<cmd> e % <cr>", { desc = "Reload file" })
+-- map("n", "<C-r>", "<cmd> e % <cr>", { desc = "Reload file" })
 
 -- exit insert mode
 map("i", "jk", "<esc>", { desc = "Exit insert mode" })
@@ -19,7 +19,7 @@ map("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 -- buffers
 map("n", "<Tab>", "<cmd> bnext <cr>", { desc = "Buffer next" })
 map("n", "<S-Tab>", "<cmd> bprevious <cr>", { desc = "Buffer previous" })
-map("n", "<leader>bd", "<cmd> bdelete <cr>", { desc = "Buffer delete" })
+-- map("n", "<leader>bd", "<cmd> bdelete <cr>", { desc = "Buffer delete" })
 
 -- clear search highlighting
 map("n", "<esc>", "<cmd> nohlsearch <return> <esc>")

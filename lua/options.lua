@@ -28,7 +28,7 @@ opt.cursorcolumn = true
 opt.number = true
 opt.relativenumber = true
 opt.ruler = false
-opt.wrap = false
+opt.wrap = true
 
 opt.signcolumn = "yes"
 opt.splitbelow = true
