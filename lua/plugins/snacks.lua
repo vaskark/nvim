@@ -26,8 +26,6 @@ return {
 		statuscolumn = { enabled = true },
 		---@class snacks.terminal.Opts: snacks.terminal.Config
 		terminal = { enabled = true },
-		---@class snacks.win.Config: vim.api.keyset.win_config
-		win = { enabled = true },
 		---@class snacks.words.Config
 		words = {
 			enabled = true,
