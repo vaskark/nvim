@@ -20,7 +20,7 @@ opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
-opt.hlsearch = false
+opt.hlsearch = true
 
 opt.cursorline = true
 opt.cursorcolumn = true
