@@ -47,7 +47,7 @@ return {
 			"<cmd> Telescope current_buffer_fuzzy_find <cr>",
 			{ desc = "Current buffer text search" }
 		)
-		vim.keymap.set("n", "<leader>fn", function()
+		vim.keymap.set("n", "<leader>fc", function()
 			require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "Find Neovim files" })
 		vim.keymap.set("n", "<leader>tb", "<cmd> Telescope <cr>", { desc = "Telescope" })
