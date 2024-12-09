@@ -1,6 +1,7 @@
 return {
   "stevearc/conform.nvim",
   event = { "BufReadPre", "BufNewFile" },
+  opts = {},
   keys = {
     {
       "<leader>cf",
@@ -18,9 +19,8 @@ return {
         sh = { "shfmt" },
       },
       format_on_save = {
-        lsp_fallback = true,
-        async = false,
         timeout_ms = 500,
+        lsp_format = fallback,
       },
     })
   end,
