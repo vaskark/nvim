@@ -4,7 +4,7 @@ return {
     require("lazyclip").setup()
   end,
   keys = {
-    { "Cm", desc = "Open clipboard manager" },
+    { "Cw", desc = "Open clipboard manager" },
   },
   -- Optional: Load plugin when yanking text
   event = { "TextYankPost" },
