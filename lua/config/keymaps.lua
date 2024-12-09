@@ -17,7 +17,7 @@ map("n", "<Tab>", "<cmd> bnext <cr>", { desc = "Buffer next" })
 map("n", "<S-Tab>", "<cmd> bprevious <cr>", { desc = "Buffer previous" })
 
 -- clear search highlighting
-map("n", "<esc>", "<cmd> nohlsearch <return> <esc>")
+map("n", "<esc>", "<cmd> nohlsearch <cr> <esc>")
 
 -- split navigation
 map("n", "<C-h>", "<C-w>h", { desc = "Move focus to the left window" })
