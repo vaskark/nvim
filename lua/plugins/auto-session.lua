@@ -8,7 +8,7 @@ return {
     suppressed_dirs = { "~/", "~/Downloads", "~/Documents", "~/Desktop/" },
   },
   keys = {
-    { "<leader>sr", "<cmd>SessionRestore<CR>", desc = "Restore session" },
-    { "<leader>ss", "<cmd>SessionSave<CR>", desc = "Save session" },
+    { "<leader>sr", "<cmd> SessionRestore <cr>", desc = "Restore session" },
+    { "<leader>ss", "<cmd> SessionSave <cr>", desc = "Save session" },
   },
 }
