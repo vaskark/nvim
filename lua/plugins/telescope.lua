@@ -32,7 +32,6 @@ return {
     })
     require("telescope").load_extension("fzf")
     require("telescope").load_extension("ui-select")
-    require("telescope").load_extension("file_browser")
 
     vim.keymap.set("n", "<leader>fa", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find all files" })
     vim.keymap.set("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
