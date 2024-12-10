@@ -9,13 +9,13 @@ return {
     dashboard = {
       enabled = true,
       sections = {
-        { section = "header" },
-        -- {
-        --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
-        --   height = 30,
-        --   indent = 0,
-        -- },
+        -- { section = "header" },
+        {
+          section = "terminal",
+          cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+          height = 30,
+          indent = 0,
+        },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
@@ -31,7 +31,6 @@ return {
     statuscolumn = { enabled = true },
     words = {
       enabled = true,
-      notify_jump = true,
     },
     zen = { enabled = true },
     styles = {
@@ -70,11 +69,18 @@ return {
       desc = "Select Scratch Buffer",
     },
     {
-      "<leader>n",
+      "<leader>nh",
       function()
         Snacks.notifier.show_history()
       end,
       desc = "Notification History",
+    },
+    {
+      "<leader>nd",
+      function()
+        Snacks.notifier.hide()
+      end,
+      desc = "Dismiss All Notifications",
     },
     {
       "<leader>bd",
@@ -124,13 +130,6 @@ return {
         Snacks.lazygit.log()
       end,
       desc = "Lazygit Log (cwd)",
-    },
-    {
-      "<leader>un",
-      function()
-        Snacks.notifier.hide()
-      end,
-      desc = "Dismiss All Notifications",
     },
     {
       "<c-/>",
