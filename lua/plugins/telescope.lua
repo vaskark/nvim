@@ -1,6 +1,5 @@
 return {
   "nvim-telescope/telescope.nvim",
-  cmd = "VimEnter",
   branch = "0.1.x",
   dependencies = {
     "nvim-lua/plenary.nvim",
@@ -19,16 +18,27 @@ return {
             ["<C-q>"] = require("telescope.actions").send_selected_to_qflist + require("telescope.actions").open_qflist,
           },
         },
-        extensions = {
-          ["ui-select"] = {
-            require("telescope.themes").get_dropdown(),
-          },
+      },
+      -- pickers = {
+      --   find_files = {
+      --     theme = "dropdown",
+      --   },
+      -- },
+      extensions = {
+        fzf = {
+          fuzzy = true, -- false will only do exact matching
+          override_generic_sorter = true, -- override the generic sorter
+          override_file_sorter = true, -- override the file sorter
+          case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+        },
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown(),
         },
       },
     })
 
-    require("telescope").load_extension("fzf")
     require("telescope").load_extension("ui-select")
+    require("telescope").load_extension("fzf")
 
     vim.keymap.set("n", "<leader>fa", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find all files" })
     vim.keymap.set("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
