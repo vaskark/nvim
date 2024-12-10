@@ -1,16 +1,12 @@
 return {
   "nvim-telescope/telescope.nvim",
-  event = "VimEnter",
-  branch = "0.1.x",
+  -- branch = "0.1.x",
+  tag = "0.1.8",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
     "nvim-telescope/telescope-ui-select.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    {
-      "nvim-telescope/telescope-file-browser.nvim",
-      dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    },
   },
   config = function()
     require("telescope").setup({
@@ -30,6 +26,7 @@ return {
         },
       },
     })
+
     require("telescope").load_extension("fzf")
     require("telescope").load_extension("ui-select")
 
