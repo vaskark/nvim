@@ -31,13 +31,13 @@ return {
           override_file_sorter = true, -- override the file sorter
           case_mode = "smart_case", -- or "ignore_case" or "respect_case"
         },
-        -- ["ui-select"] = {
-        --   require("telescope.themes").get_dropdown(),
-        -- },
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown(),
+        },
       },
     })
 
-    -- require("telescope").load_extension("ui-select")
+    require("telescope").load_extension("ui-select")
     require("telescope").load_extension("fzf")
 
     vim.keymap.set("n", "<leader>fa", "<cmd> Telescope find_files hidden=true <cr>", { desc = "Find all files" })
