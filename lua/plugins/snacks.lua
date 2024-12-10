@@ -1,9 +1,9 @@
 return {
   "folke/snacks.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   priority = 1000,
   lazy = false,
   opts = {
-    animate = { enabled = true },
     bigfile = { enabled = true },
     dashboard = {
       enabled = true,
@@ -19,24 +19,24 @@ return {
         { section = "startup" },
       },
     },
-    dim = { enabled = true },
     indent = { enabled = true },
+    input = { enabled = true },
     notifier = {
       enabled = true,
       timeout = 3000,
     },
     quickfile = { enabled = true },
+    scroll = { enabled = true },
     statuscolumn = { enabled = true },
+    words = {
+      enabled = true,
+      notify_jump = true,
+    },
     styles = {
       notification = {
         wo = { wrap = true }, -- Wrap notifications
       },
     },
-    words = {
-      enabled = true,
-      notify_jump = true,
-    },
-    zen = { enabled = true },
   },
   keys = {
     {
