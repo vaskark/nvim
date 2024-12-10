@@ -34,6 +34,7 @@ return {
     vim.keymap.set("n", "<leader>fb", "<cmd> Telescope buffers theme=ivy <cr>", { desc = "List buffers" })
     vim.keymap.set("n", "<leader>ff", "<cmd> Telescope find_files <cr>", { desc = "Find files" })
     vim.keymap.set("n", "<leader>fg", "<cmd> Telescope live_grep <cr>", { desc = "Live text search" })
+    vim.keymap.set("n", "<leader>fh", "<cmd> Telescope help_tags <cr>", { desc = "Search help" })
     vim.keymap.set("n", "<leader>fr", "<cmd> Telescope oldfiles <cr>", { desc = "Recent files" })
     vim.keymap.set("n", "<leader>fs", "<cmd> Telescope grep_string <cr>", { desc = "String search" })
     vim.keymap.set(
