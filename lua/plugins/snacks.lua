@@ -3,6 +3,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   priority = 1000,
   lazy = false,
+  ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
     dashboard = {
@@ -32,6 +33,7 @@ return {
       enabled = true,
       notify_jump = true,
     },
+    zen = { enabled = true },
     styles = {
       notification = {
         wo = { wrap = true }, -- Wrap notifications
