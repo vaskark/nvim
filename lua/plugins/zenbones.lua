@@ -9,7 +9,6 @@ return {
     vim.g.kanagawabones_transparent_background = true
     vim.g.neobones_transparent_background = true
     vim.g.nordbones_transparent_background = true
-    vim.g.randombones_transparent_background = true
     vim.g.rosebones_transparent_background = true
     vim.g.seoulbones_transparent_background = true
     vim.g.tokyobones_transparent_background = true
