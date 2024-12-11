@@ -1,8 +1,8 @@
 return {
   "folke/snacks.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  priority = 1000,
   lazy = false,
+  priority = 1000,
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
@@ -12,9 +12,8 @@ return {
         { section = "header" },
         -- {
         --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/magneto.png",
         --   height = 30,
-        --   indent = 0,
         -- },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
@@ -32,10 +31,9 @@ return {
     words = {
       enabled = true,
     },
-    zen = { enabled = true },
     styles = {
       notification = {
-        wo = { wrap = true }, -- Wrap notifications
+        wo = { wrap = true },
       },
     },
   },
@@ -130,20 +128,6 @@ return {
         Snacks.lazygit.log()
       end,
       desc = "Lazygit Log (cwd)",
-    },
-    {
-      "<c-/>",
-      function()
-        Snacks.terminal()
-      end,
-      desc = "Toggle Terminal",
-    },
-    {
-      "<c-_>",
-      function()
-        Snacks.terminal()
-      end,
-      desc = "which_key_ignore",
     },
     {
       "]]",
