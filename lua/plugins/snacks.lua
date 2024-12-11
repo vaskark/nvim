@@ -19,7 +19,15 @@ return {
         { section = "startup" },
       },
     },
-    indent = { enabled = true },
+    indent = {
+      enabled = true,
+      indent = {
+        only_scope = true,
+      },
+      scope = {
+        underline = true,
+      },
+    },
     input = { enabled = true },
     notifier = {
       enabled = true,
