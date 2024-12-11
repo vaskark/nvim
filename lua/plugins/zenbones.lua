@@ -14,5 +14,6 @@ return {
     vim.g.tokyobones_transparent_background = true
     vim.g.vimbones_transparent_background = true
     vim.g.zenbones_transparent_background = true
+    vim.g.zenwritten_transparent_background = true
   end,
 }
