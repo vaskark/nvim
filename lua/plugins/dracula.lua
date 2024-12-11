@@ -1,5 +1,5 @@
 return {
-  "maxmx03/dracula.nvim",
+  "Mofiqul/dracula.nvim",
   config = function()
     require("dracula").setup({
       transparent_bg = true,
