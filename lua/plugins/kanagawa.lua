@@ -2,6 +2,7 @@ return {
   "rebelot/kanagawa.nvim",
   config = function()
     require("kanagawa").setup({
+      transparent = true,
       colors = {
         theme = {
           all = {
@@ -11,7 +12,6 @@ return {
           },
         },
       },
-      transparent = true,
       overrides = function(colors)
         local theme = colors.theme
         return {
@@ -24,6 +24,10 @@ return {
           TelescopePreviewBorder = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
         }
       end,
+      theme = "dragon",
+      background = {
+        dark = "dragon",
+      },
     })
   end,
 }
