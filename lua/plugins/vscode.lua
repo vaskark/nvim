@@ -1,6 +1,8 @@
 return {
-	"Mofiqul/vscode.nvim",
-	opts = {
-		transparent = true,
-	},
+  "Mofiqul/vscode.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    transparent = true,
+  },
 }
