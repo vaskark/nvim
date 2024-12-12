@@ -12,7 +12,7 @@ return {
         { section = "header" },
         -- {
         --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/magneto.png",
+        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/hulkfist.png",
         --   height = 30,
         -- },
         { section = "keys", gap = 1, padding = 1 },
@@ -50,7 +50,6 @@ return {
       }),
     },
     quickfile = { enabled = true },
-    scroll = { enabled = true },
     statuscolumn = {
       enabled = true,
       folds = {
