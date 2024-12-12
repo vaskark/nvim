@@ -1,7 +1,7 @@
 local opt = vim.opt
 
-vim.g.mapleader = vim.keycode("<space>")
--- vim.g.maplocalleader = "_"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 opt.termguicolors = true
 opt.laststatus = 2
