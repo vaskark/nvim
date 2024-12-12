@@ -1,7 +1,7 @@
 local opt = vim.opt
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "_"
+vim.g.mapleader = vim.keycode("<space>")
+-- vim.g.maplocalleader = "_"
 
 opt.termguicolors = true
 opt.laststatus = 2
@@ -44,5 +44,5 @@ opt.virtualedit = "block"
 opt.inccommand = "split"
 
 -- add binaries installed by mason.nvim to path
-local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
-vim.env.PATH = vim.env.PATH .. (is_windows and ";" or ":") .. vim.fn.stdpath("data") .. "/mason/bin"
+-- local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
+-- vim.env.PATH = vim.env.PATH .. (is_windows and ";" or ":") .. vim.fn.stdpath("data") .. "/mason/bin"

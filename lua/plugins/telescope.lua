@@ -25,12 +25,7 @@ return {
       --   },
       -- },
       extensions = {
-        fzf = {
-          fuzzy = true, -- false will only do exact matching
-          override_generic_sorter = true, -- override the generic sorter
-          override_file_sorter = true, -- override the file sorter
-          case_mode = "smart_case", -- or "ignore_case" or "respect_case"
-        },
+        fzf = {},
         ["ui-select"] = {
           require("telescope.themes").get_dropdown(),
         },
@@ -56,6 +51,13 @@ return {
     vim.keymap.set("n", "<leader>fc", function()
       require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
     end, { desc = "Find Neovim files" })
+
+    vim.keymap.set("n", "<leader>fp", function()
+      require("telescope.builtin").find_files({ cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy") })
+    end, { desc = "Find Neovim package files" })
+
+    require("config.telescope.multigrep").setup()
+
     vim.keymap.set("n", "<leader>tb", "<cmd> Telescope <cr>", { desc = "Telescope" })
     vim.keymap.set("n", "<leader>tc", "<cmd> Telescope colorscheme <cr>", { desc = "Colorschemes" })
   end,
