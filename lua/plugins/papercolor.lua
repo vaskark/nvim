@@ -1,12 +1,11 @@
 return {
-  "NLKNguyen/papercolor-theme",
-  -- config = function()
-  --   vim.g.PaperColor_Theme_Options = {
-  --     'theme': {
-  --       'default': {
-  --         'transparent_background': 0
-  --       }
-  --     }
-  --   }
-  -- end,
+  "pappasam/papercolor-theme-slim",
+  config = function()
+    vim.cmd([[
+      augroup custom_papercolorslim_transparent_background
+        autocmd!
+        autocmd ColorScheme PaperColorSlim highlight Normal guibg=NONE
+      augroup end
+  ]])
+  end,
 }
