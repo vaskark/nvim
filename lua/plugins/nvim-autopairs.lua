@@ -10,6 +10,8 @@ return {
       check_ts = true, -- enable treesitter
       ts_config = {
         lua = { "string" },
+        javascript = { "template_string" },
+        java = false, -- don't check treesitter on java
       },
     })
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
