@@ -4,7 +4,7 @@ return {
   opts = {
     user_default_options = {
       names = false,
-      mode = "virtualtext", -- background, foreground, virtualtext
+      mode = "background", -- background, foreground, virtualtext
     },
   },
 }
