@@ -7,7 +7,9 @@ opt.termguicolors = true
 opt.laststatus = 2
 opt.showmode = false
 
-opt.clipboard = "unnamedplus"
+vim.schedule(function()
+  opt.clipboard = "unnamedplus"
+end)
 
 opt.tabstop = 2
 opt.softtabstop = 2
@@ -15,6 +17,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 opt.autoindent = true
+opt.breakindent = true
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
@@ -35,7 +38,7 @@ opt.splitbelow = true
 opt.splitright = true
 opt.undofile = true
 
-opt.timeoutlen = 400
+opt.timeoutlen = 300
 opt.updatetime = 250
 
 opt.scrolloff = 999
