@@ -6,7 +6,7 @@ return {
     transparent_mode = true,
     overrides = {
       CursorLineNr = {
-        bg = "none",
+        bg = "NONE",
       },
     },
   },
