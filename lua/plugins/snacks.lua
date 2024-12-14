@@ -1,6 +1,5 @@
 return {
   "folke/snacks.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
   lazy = false,
   priority = 1000,
   ---@type snacks.Config
@@ -22,10 +21,10 @@ return {
     indent = {
       enabled = true,
       indent = {
-        only_scope = true,
+        only_scope = false, -- true = problems
       },
       scope = {
-        underline = true,
+        underline = false,
       },
     },
     input = { enabled = true },
@@ -50,6 +49,9 @@ return {
       }),
     },
     quickfile = { enabled = true },
+    scope = {
+      enabled = true,
+    },
     statuscolumn = {
       enabled = true,
       folds = {
