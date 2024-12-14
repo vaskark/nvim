@@ -19,11 +19,11 @@ return {
           },
         },
       },
-      -- pickers = {
-      --   find_files = {
-      --     theme = "dropdown",
-      --   },
-      -- },
+      pickers = {
+        find_files = {
+          find_command = { "rg", "--no-config", "--files", "--sortr=modified" },
+        },
+      },
       extensions = {
         fzf = {},
         ["ui-select"] = {
