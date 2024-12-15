@@ -21,11 +21,12 @@ return {
     indent = {
       enabled = true,
       indent = {
-        only_scope = false, -- true = problems
+        only_scope = true,
       },
       scope = {
-        underline = false,
+        underline = true,
       },
+      chunk = { enabled = true },
     },
     input = { enabled = true },
     notifier = {
