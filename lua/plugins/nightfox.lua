@@ -4,9 +4,6 @@ return {
     require("nightfox").setup({
       options = {
         transparent = true,
-        colorblind = {
-          enable = false,
-        },
         styles = {
           commments = "italic",
         },
