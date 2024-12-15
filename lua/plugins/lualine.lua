@@ -14,6 +14,7 @@ return {
         },
         ignore_focus = {},
         always_divide_middle = true,
+        always_show_tabline = true,
         globalstatus = false,
         refresh = {
           statusline = 1000,
@@ -44,7 +45,6 @@ return {
         },
         lualine_y = { "progress" },
         lualine_z = { "location" },
-        -- lualine_z = { { "datetime", style = "%-I:%M%p" } },
       },
       inactive_sections = {
         lualine_a = {},
@@ -55,7 +55,7 @@ return {
         lualine_z = {},
       },
       tabline = {
-        -- lualine_z = { { "datetime", style = "%-I:%M%p" } },
+        -- lualine_z = { { "datetime", style = "%-I:%M %p" } },
       },
       winbar = {},
       inactive_winbar = {},
