@@ -9,5 +9,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- remove bg to lualine (if supported)
+-- remove bg for lualine (if supported)
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
