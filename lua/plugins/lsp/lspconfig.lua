@@ -1,7 +1,7 @@
 return {
   "neovim/nvim-lspconfig",
   dependencies = {
-    "daghen/blink.cmp",
+    "Saghen/blink.cmp",
     {
       "folke/lazydev.nvim",
       ft = "lua",
