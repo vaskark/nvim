@@ -1,5 +1,5 @@
 return {
-  "Saghen/blink.cmp",
+  "saghen/blink.cmp",
   dependencies = "rafamadriz/friendly-snippets",
   version = "v0.*",
   ---@module 'blink.cmp'
