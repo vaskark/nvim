@@ -6,4 +6,5 @@ return {
       change = { text = "~" },
     },
   },
+  vim.keymap.set("n", "<leader>gp", "<cmd> Gitsigns preview_hunk <cr>", { desc = "Gitsigns preview" }),
 }
