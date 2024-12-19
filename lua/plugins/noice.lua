@@ -7,12 +7,12 @@ return {
   },
   opts = {
     cmdline = {
-      view = "cmdline", -- cmdline, cmdline_popup
+      view = "cmdline_popup", -- cmdline, cmdline_popup
     },
     notify = { enabled = false },
     lsp = {
       progress = {
-        view = "mini", --mini, notify
+        view = "notify", --mini, notify
       },
       override = {
         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
