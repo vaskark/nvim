@@ -12,7 +12,7 @@ return {
     notify = { enabled = false },
     lsp = {
       progress = {
-        view = "notify", --mini, notify
+        view = "mini", --mini, notify
       },
       override = {
         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
