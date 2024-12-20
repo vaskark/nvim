@@ -7,7 +7,7 @@ return {
   },
   opts = {
     cmdline = {
-      view = "cmdline_popup", -- cmdline, cmdline_popup
+      view = "cmdline", -- cmdline, cmdline_popup
     },
     notify = { enabled = false },
     lsp = {
