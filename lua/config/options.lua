@@ -11,7 +11,7 @@ vim.schedule(function()
   opt.clipboard = "unnamedplus"
 end)
 
-vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 opt.tabstop = 2
 opt.softtabstop = 2
