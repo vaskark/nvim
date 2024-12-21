@@ -6,12 +6,11 @@ return {
   opts = {
     bigfile = { enabled = true },
     dashboard = {
-      enabled = true,
       sections = {
         { section = "header" },
         -- {
         --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/bruce.png",
+        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/feathers.jpg",
         --   height = 30,
         -- },
         { section = "keys", gap = 1, padding = 1 },
@@ -19,7 +18,6 @@ return {
       },
     },
     indent = {
-      enabled = true,
       indent = {
         only_scope = true,
       },
@@ -30,8 +28,8 @@ return {
     },
     input = { enabled = true },
     notifier = {
-      enabled = true,
       timeout = 3000,
+      style = "compact", -- compact, fancy, minimal
 
       -- simple LSP progress
       vim.api.nvim_create_autocmd("LspProgress", {
@@ -50,11 +48,8 @@ return {
       }),
     },
     quickfile = { enabled = true },
-    scope = {
-      enabled = true,
-    },
+    scope = { enabled = true },
     statuscolumn = {
-      enabled = true,
       folds = {
         open = false,
       },
