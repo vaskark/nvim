@@ -28,7 +28,7 @@ return {
       end,
     },
     sources = {
-      default = { "lsp", "path", "snippets", "buffer" },
+      default = { "lsp", "path", "snippets", "luasnip", "buffer" },
     },
     signature = { enabled = true },
   },
