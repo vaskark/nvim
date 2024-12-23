@@ -18,7 +18,4 @@ return {
       aggressive_spell = false, -- true | false
     },
   },
-  config = function(_, opts)
-    require("flow").setup(opts)
-  end,
 }
