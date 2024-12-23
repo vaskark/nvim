@@ -5,11 +5,20 @@ return {
   tag = "v1.0.0",
   opts = {
     theme = {
-      transparent = true,
+      style = "dark", --  "dark" | "light"
+      contrast = "default", -- "default" | "high"
+      transparent = true, -- true | false
     },
     colors = {
-      mode = "default", -- default, dark, light
-      fluo = "pink", -- pink, cyan, yellow, orange, green
+      mode = "default", -- "default" | "dark" | "light"
+      fluo = "orange", -- "pink" | "cyan" | "yellow" | "orange" | "green"
+    },
+    ui = {
+      borders = "light", -- "theme" | "inverse" | "fluo" | "none"
+      aggressive_spell = false, -- true | false
     },
   },
+  config = function(_, opts)
+    require("flow").setup(opts)
+  end,
 }
