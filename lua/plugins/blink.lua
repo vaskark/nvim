@@ -16,6 +16,7 @@ return {
       ["<PageUp>"] = { "scroll_documentation_up", "fallback" },
       ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
     },
+    completion = { list = { selection = "manual" } },
     appearance = {
       use_nvim_cmp_as_default = true,
       nerd_font_variant = "mono",
