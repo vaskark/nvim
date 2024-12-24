@@ -1,5 +1,6 @@
 return {
   "comfysage/evergarden",
+  lazy = false,
   priority = 1000,
   opts = {
     transparent_background = true,
