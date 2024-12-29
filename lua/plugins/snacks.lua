@@ -8,12 +8,12 @@ return {
     dashboard = {
       enabled = true,
       sections = {
-        -- { section = "header" },
-        {
-          section = "terminal",
-          cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
-          height = 30,
-        },
+        { section = "header" },
+        -- {
+        --   section = "terminal",
+        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+        --   height = 30,
+        -- },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
