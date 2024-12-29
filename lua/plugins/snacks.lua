@@ -6,18 +6,20 @@ return {
   opts = {
     bigfile = { enabled = true },
     dashboard = {
+      enabled = true,
       sections = {
-        { section = "header" },
-        -- {
-        --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/feathers.jpg",
-        --   height = 30,
-        -- },
+        -- { section = "header" },
+        {
+          section = "terminal",
+          cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+          height = 30,
+        },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
     },
     indent = {
+      enabled = true,
       indent = {
         only_scope = true,
       },
@@ -28,6 +30,7 @@ return {
     },
     input = { enabled = true },
     notifier = {
+      enabled = true,
       timeout = 3000,
       style = "compact", -- compact, fancy, minimal
 
@@ -50,6 +53,7 @@ return {
     quickfile = { enabled = true },
     scope = { enabled = true },
     statuscolumn = {
+      enabled = true,
       folds = {
         open = false,
       },
@@ -97,14 +101,14 @@ return {
       function()
         Snacks.notifier.show_history()
       end,
-      desc = "Notification History",
+      desc = "Notifications History",
     },
     {
       "<leader>nd",
       function()
         Snacks.notifier.hide()
       end,
-      desc = "Dismiss All Notifications",
+      desc = "Notifications Dismiss All",
     },
     {
       "<leader>bd",
