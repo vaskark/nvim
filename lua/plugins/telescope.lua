@@ -56,8 +56,6 @@ return {
       require("telescope.builtin").find_files({ cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy") })
     end, { desc = "Find Neovim package files" })
 
-    require("config.telescope.multigrep").setup()
-
     vim.keymap.set("n", "<leader>tb", "<cmd> Telescope <cr>", { desc = "Telescope" })
     vim.keymap.set("n", "<leader>tc", "<cmd> Telescope colorscheme <cr>", { desc = "Colorschemes" })
   end,
