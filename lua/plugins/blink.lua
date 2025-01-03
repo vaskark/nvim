@@ -16,12 +16,36 @@ return {
       ["<PageUp>"] = { "scroll_documentation_up", "fallback" },
       ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
     },
-    completion = { list = { selection = "manual" } },
+    completion = {
+      documentation = { window = { border = "single" } },
+      ghost_text = { enabled = false },
+      list = {
+        selection = function(ctx)
+          return ctx.mode == "cmdline" and "auto_insert" or "preselect"
+        end,
+      },
+      menu = {
+        -- auto_show = false,
+        auto_show = function(ctx)
+          return ctx.mode ~= "cmdline" or not vim.tbl_contains({ "/", "?" }, vim.fn.getcmdtype())
+        end,
+        draw = {
+          treesitter = { "lsp" },
+        },
+      },
+    },
     appearance = {
       use_nvim_cmp_as_default = true,
       nerd_font_variant = "mono",
     },
-    signature = { enabled = true },
+    sources = {
+      default = { "lsp", "path", "snippets", "buffer" },
+      cmdline = {},
+    },
+    signature = {
+      enabled = true,
+      window = { border = "single" },
+    },
   },
   opts_extend = { "sources.default" },
 }
