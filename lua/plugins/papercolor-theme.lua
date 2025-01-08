@@ -1,5 +1,5 @@
 return {
-  "NLKNguyen/papercolor-theme",
+  "vaskark/papercolor-theme",
   config = function()
     vim.g.PaperColor_Theme_Options = {
       theme = {
