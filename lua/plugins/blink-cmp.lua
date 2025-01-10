@@ -9,12 +9,19 @@ return {
   opts = {
     keymap = {
       preset = "default",
-      ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
-      ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+      ["<Tab>"] = { "snippet_backward", "fallback" },
+      ["<S-Tab>"] = { "snippet_backward", "fallback" },
+      
+      ["<Up>"] = { "select_next", "fallback" },
+      ["<Down>"] = { "select_next", "fallback" },
+      ["<C-p>"] = { "select_prev", "fallback" },
+      ["<C-n>"] = { "select_next", "fallback" },
+      
       -- ["<CR>"] = { "accept", "fallback" },
       ["<Esc>"] = { "hide", "fallback" },
-      ["<PageUp>"] = { "scroll_documentation_up", "fallback" },
-      ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
+      
+      ["<S-k>"] = { "scroll_documentation_up", "fallback" },
+      ["<S-j>"] = { "scroll_documentation_down", "fallback" },
     },
     completion = {
       documentation = { window = { border = "single" } },
