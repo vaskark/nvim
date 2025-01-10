@@ -11,7 +11,7 @@ return {
       preset = "default",
       ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
       ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
-      ["<CR>"] = { "accept", "fallback" },
+      -- ["<CR>"] = { "accept", "fallback" },
       ["<Esc>"] = { "hide", "fallback" },
       ["<PageUp>"] = { "scroll_documentation_up", "fallback" },
       ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
@@ -21,9 +21,13 @@ return {
       ghost_text = { enabled = false },
       list = {
         selection = {
-          preselect = true,
-          auto_insert = true,
-        }
+          preselect = function(ctx)
+            return ctx.mode ~= "cmdline"
+          end,
+          auto_insert = function(ctx)
+            return ctx.mode ~= "cmdline"
+          end,
+        },
       },
       menu = {
         -- auto_show = false,
