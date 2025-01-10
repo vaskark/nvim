@@ -11,7 +11,7 @@ return {
       preset = "default",
       ["<Tab>"] = { "snippet_backward", "fallback" },
       ["<S-Tab>"] = { "snippet_backward", "fallback" },
-      ["<Up>"] = { "select_next", "fallback" },
+      ["<Up>"] = { "select_prev", "fallback" },
       ["<Down>"] = { "select_next", "fallback" },
       -- ["<CR>"] = { "accept", "fallback" },
       ["<Esc>"] = { "hide", "fallback" },
@@ -56,3 +56,4 @@ return {
   },
   opts_extend = { "sources.default" },
 }
+end
