@@ -12,10 +12,16 @@ return {
       },
     },
   },
-  config = function()
-    local capabilities = require("blink.cmp").get_lsp_capabilities()
-    require("lspconfig").lua_ls.setup({
-      capabilities = capabilities,
-    })
+  opts = {
+    servers = {
+      lua_ls = {},
+    },
+  },
+  config = function(_, opts)
+    local lspconfig = require("lspconfig")
+    for server, config in pairs(opts.servers) do
+      config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
+      lspconfig[server].setup(config)
+    end
   end,
 }
