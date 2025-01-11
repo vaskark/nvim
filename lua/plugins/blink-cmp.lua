@@ -19,8 +19,14 @@ return {
       ["<S-j>"] = { "scroll_documentation_down", "fallback" },
     },
     completion = {
-      documentation = { window = { border = "single" } },
-      ghost_text = { enabled = false },
+      documentation = {
+        window = {
+          border = "single",
+        },
+      },
+      ghost_text = {
+        enabled = false,
+      },
       list = {
         selection = {
           preselect = function(ctx)
@@ -52,7 +58,9 @@ return {
     },
     signature = {
       enabled = true,
-      window = { border = "single" },
+      window = {
+        border = "single",
+      },
     },
   },
   opts_extend = { "sources.default" },
