@@ -9,11 +9,12 @@ return {
   opts = {
     keymap = {
       preset = "default",
-      ["<Tab>"] = { "snippet_backward", "fallback" },
+      ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<Tab>"] = { "snippet_forward", "fallback" },
       ["<S-Tab>"] = { "snippet_backward", "fallback" },
       ["<Up>"] = { "select_prev", "fallback" },
       ["<Down>"] = { "select_next", "fallback" },
-      -- ["<CR>"] = { "accept", "fallback" },
+      ["<C-y>"] = { "select_and_accept" },
       ["<Esc>"] = { "hide", "fallback" },
       ["<S-k>"] = { "scroll_documentation_up", "fallback" },
       ["<S-j>"] = { "scroll_documentation_down", "fallback" },
