@@ -33,7 +33,7 @@ vim.api.nvim_create_autocmd("VimResized", {
   command = "wincmd =",
 })
 
--- Help buffers to the right
+-- Help buffers open to the right
 vim.api.nvim_create_autocmd("FileType", {
   desc = "Automatically Split help Buffers to the right",
   pattern = "help",
