@@ -218,6 +218,13 @@ return {
       end,
       desc = "Recent",
     },
+    {
+      "<leader>fz",
+      function()
+        Snacks.picker.zoxide()
+      end,
+      desc = "Zoxide",
+    },
     -- git
     {
       "<leader>gc",
