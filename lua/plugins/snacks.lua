@@ -184,6 +184,13 @@ return {
     },
     -- find
     {
+      "<leader>fa",
+      function()
+        Snacks.picker()
+      end,
+      desc = "Builtin",
+    },
+    {
       "<leader>fb",
       function()
         Snacks.picker.buffers()
@@ -217,6 +224,13 @@ return {
         Snacks.picker.recent()
       end,
       desc = "Recent",
+    },
+    {
+      "<leader>fs",
+      function()
+        Snacks.picker.spelling()
+      end,
+      desc = "Spelling",
     },
     {
       "<leader>fu",
