@@ -9,7 +9,7 @@ return {
       enabled = true,
       preset = {
         keys = {
-          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.picker.smart()" },
+          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.picker.files()" },
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.picker.grep()" },
           { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.picker.recent()" },
@@ -72,31 +72,17 @@ return {
     },
     styles = {
       notification = {
-        wo = { wrap = true },
+        -- wo = { wrap = true },
       },
     },
   },
   keys = {
     {
-      "<leader>zm",
+      "<leader>z",
       function()
         Snacks.zen()
       end,
       desc = "Toggle Zen Mode",
-    },
-    {
-      "<leader>.",
-      function()
-        Snacks.scratch()
-      end,
-      desc = "Toggle Scratch Buffer",
-    },
-    {
-      "<leader>S",
-      function()
-        Snacks.scratch.select()
-      end,
-      desc = "Select Scratch Buffer",
     },
     {
       "<leader>nh",
@@ -120,7 +106,7 @@ return {
       desc = "Delete Buffer",
     },
     {
-      "<leader>cR",
+      "<leader>cr",
       function()
         Snacks.rename.rename_file()
       end,
@@ -209,8 +195,7 @@ return {
     {
       "<leader>ff",
       function()
-        -- Snacks.picker.files()
-        Snacks.picker.smart()
+        Snacks.picker.files()
       end,
       desc = "Find Files",
     },
@@ -231,9 +216,9 @@ return {
     {
       "<leader>fs",
       function()
-        Snacks.picker.spelling()
+        Snacks.picker.smart()
       end,
-      desc = "Spelling",
+      desc = "Find Files (Smart)",
     },
     {
       "<leader>fu",
