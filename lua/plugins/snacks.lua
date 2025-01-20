@@ -300,13 +300,6 @@ return {
       desc = "Registers",
     },
     {
-      "<leader>sa",
-      function()
-        Snacks.picker.autocmds()
-      end,
-      desc = "Autocmds",
-    },
-    {
       "<leader>sc",
       function()
         Snacks.picker.command_history()
@@ -356,13 +349,6 @@ return {
       desc = "Keymaps",
     },
     {
-      "<leader>sl",
-      function()
-        Snacks.picker.loclist()
-      end,
-      desc = "Location List",
-    },
-    {
       "<leader>sM",
       function()
         Snacks.picker.man()
@@ -382,13 +368,6 @@ return {
         Snacks.picker.resume()
       end,
       desc = "Resume",
-    },
-    {
-      "<leader>sq",
-      function()
-        Snacks.picker.qflist()
-      end,
-      desc = "Quickfix List",
     },
     {
       "<leader>uC",
