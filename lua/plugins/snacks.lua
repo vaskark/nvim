@@ -219,6 +219,13 @@ return {
       desc = "Recent",
     },
     {
+      "<leader>fu",
+      function()
+        Snacks.picker.undo()
+      end,
+      desc = "Undo",
+    },
+    {
       "<leader>fz",
       function()
         Snacks.picker.zoxide()
