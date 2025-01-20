@@ -9,7 +9,7 @@ return {
       enabled = true,
       preset = {
         keys = {
-          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.picker.files()" },
+          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.picker.smart()" },
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.picker.grep()" },
           { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.picker.recent()" },
@@ -49,7 +49,16 @@ return {
       enabled = true,
       style = "compact", -- compact, fancy, minimal
     },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      sources = {
+        buffers = {
+          layout = {
+            preset = "ivy",
+          },
+        },
+      },
+    },
     quickfile = { enabled = true },
     scope = { enabled = true },
     statuscolumn = {
@@ -69,18 +78,11 @@ return {
   },
   keys = {
     {
-      "<leader>z",
+      "<leader>zm",
       function()
         Snacks.zen()
       end,
       desc = "Toggle Zen Mode",
-    },
-    {
-      "<leader>Z",
-      function()
-        Snacks.zen.zoom()
-      end,
-      desc = "Toggle Zoom",
     },
     {
       "<leader>.",
@@ -188,7 +190,7 @@ return {
       function()
         Snacks.picker()
       end,
-      desc = "Builtin",
+      desc = "Builtins",
     },
     {
       "<leader>fb",
@@ -207,7 +209,8 @@ return {
     {
       "<leader>ff",
       function()
-        Snacks.picker.files()
+        -- Snacks.picker.files()
+        Snacks.picker.smart()
       end,
       desc = "Find Files",
     },
