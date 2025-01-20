@@ -293,25 +293,11 @@ return {
     },
     -- search
     {
-      '<leader>s"',
-      function()
-        Snacks.picker.registers()
-      end,
-      desc = "Registers",
-    },
-    {
       "<leader>sc",
       function()
         Snacks.picker.command_history()
       end,
       desc = "Command History",
-    },
-    {
-      "<leader>sC",
-      function()
-        Snacks.picker.commands()
-      end,
-      desc = "Commands",
     },
     {
       "<leader>sd",
@@ -328,20 +314,6 @@ return {
       desc = "Help Pages",
     },
     {
-      "<leader>sH",
-      function()
-        Snacks.picker.highlights()
-      end,
-      desc = "Highlights",
-    },
-    {
-      "<leader>sj",
-      function()
-        Snacks.picker.jumps()
-      end,
-      desc = "Jumps",
-    },
-    {
       "<leader>sk",
       function()
         Snacks.picker.keymaps()
@@ -349,21 +321,14 @@ return {
       desc = "Keymaps",
     },
     {
-      "<leader>sM",
+      "<leader>sm",
       function()
         Snacks.picker.man()
       end,
       desc = "Man Pages",
     },
     {
-      "<leader>sm",
-      function()
-        Snacks.picker.marks()
-      end,
-      desc = "Marks",
-    },
-    {
-      "<leader>sR",
+      "<leader>sr",
       function()
         Snacks.picker.resume()
       end,
@@ -375,43 +340,6 @@ return {
         Snacks.picker.colorschemes()
       end,
       desc = "Colorschemes",
-    },
-    -- LSP
-    {
-      "gd",
-      function()
-        Snacks.picker.lsp_definitions()
-      end,
-      desc = "Goto Definition",
-    },
-    {
-      "gr",
-      function()
-        Snacks.picker.lsp_references()
-      end,
-      nowait = true,
-      desc = "References",
-    },
-    {
-      "gI",
-      function()
-        Snacks.picker.lsp_implementations()
-      end,
-      desc = "Goto Implementation",
-    },
-    {
-      "gy",
-      function()
-        Snacks.picker.lsp_type_definitions()
-      end,
-      desc = "Goto T[y]pe Definition",
-    },
-    {
-      "<leader>ss",
-      function()
-        Snacks.picker.lsp_symbols()
-      end,
-      desc = "LSP Symbols",
     },
   },
   init = function()
