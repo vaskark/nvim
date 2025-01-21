@@ -27,7 +27,7 @@ return {
         { section = "header" },
         -- {
         --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/magneto.png",
+        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/bruce.png",
         --   height = 30,
         -- },
         { section = "keys", gap = 1, padding = 1 },
@@ -113,13 +113,6 @@ return {
       desc = "Rename File",
     },
     {
-      "<leader>gB",
-      function()
-        Snacks.gitbrowse()
-      end,
-      desc = "Git Browse",
-    },
-    {
       "<leader>gb",
       function()
         Snacks.git.blame_line()
@@ -127,25 +120,11 @@ return {
       desc = "Git Blame Line",
     },
     {
-      "<leader>gf",
-      function()
-        Snacks.lazygit.log_file()
-      end,
-      desc = "Lazygit Current File History",
-    },
-    {
       "<leader>gg",
       function()
         Snacks.lazygit()
       end,
       desc = "Lazygit",
-    },
-    {
-      "<leader>gl",
-      function()
-        Snacks.lazygit.log()
-      end,
-      desc = "Lazygit Log (cwd)",
     },
     {
       "]]",
@@ -236,7 +215,7 @@ return {
     },
     -- git
     {
-      "<leader>gc",
+      "<leader>gl",
       function()
         Snacks.picker.git_log()
       end,
