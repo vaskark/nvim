@@ -172,6 +172,13 @@ return {
       desc = "Find Config Files",
     },
     {
+      "<leader>fe",
+      function()
+        Snacks.picker.explorer()
+      end,
+      desc = "File Explorer",
+    },
+    {
       "<leader>ff",
       function()
         Snacks.picker.files()
