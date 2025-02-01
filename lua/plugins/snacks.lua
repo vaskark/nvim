@@ -172,7 +172,7 @@ return {
       desc = "Find Config Files",
     },
     {
-      "<leader>fe",
+      "\\",
       function()
         Snacks.picker.explorer()
       end,
