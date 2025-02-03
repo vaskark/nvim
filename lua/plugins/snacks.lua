@@ -34,6 +34,7 @@ return {
         { section = "startup" },
       },
     },
+    explorer = { enabled = true },
     indent = {
       enabled = true,
       indent = {
@@ -61,6 +62,7 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
+    scroll = { enabled = false },
     statuscolumn = {
       enabled = true,
       folds = {
