@@ -22,11 +22,13 @@ return {
       modules = {
         blink = true,
         fzf = true,
+        gitsigns = true,
         mini = true,
         neogit = true,
-        semantic_tokens = false,
         snacks = true,
+        telescope = true,
         treesitter = true,
+        which_key = true,
       },
 
       --- Override any color from the ef-theme
