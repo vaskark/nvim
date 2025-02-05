@@ -48,7 +48,7 @@ return {
 
       options = {
         compile = true, -- Whether to compile a theme
-        compile_path = vim.fn.stdpath("cache") .. "/ef-themes", -- Directory in which to place compiled themes
+        compile_path = vim.fn.stdpath("cache") .. "/ef-themes",
       },
     })
   end,
