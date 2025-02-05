@@ -1,3 +1,0 @@
-return {
-	"vmchale/ion-vim",
-}
