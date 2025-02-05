@@ -1,8 +1,10 @@
 return {
+  -- HACK: docs @ https://github.com/folke/snacks.nvim/blob/main/docs
   "folke/snacks.nvim",
   lazy = false,
   priority = 1000,
   ---@type snacks.Config
+  -- NOTE: Options
   opts = {
     bigfile = { enabled = true },
     dashboard = {
@@ -62,7 +64,7 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
-    scroll = { enabled = false },
+    scroll = { enabled = true },
     statuscolumn = {
       enabled = true,
       folds = {
@@ -78,6 +80,7 @@ return {
       },
     },
   },
+  -- NOTE: Keymaps
   keys = {
     {
       "<leader>z",
@@ -113,36 +116,6 @@ return {
         Snacks.rename.rename_file()
       end,
       desc = "Rename File",
-    },
-    {
-      "<leader>gb",
-      function()
-        Snacks.git.blame_line()
-      end,
-      desc = "Git Blame Line",
-    },
-    {
-      "<leader>gg",
-      function()
-        Snacks.lazygit()
-      end,
-      desc = "Lazygit",
-    },
-    {
-      "]]",
-      function()
-        Snacks.words.jump(vim.v.count1)
-      end,
-      desc = "Next Reference",
-      mode = { "n", "t" },
-    },
-    {
-      "[[",
-      function()
-        Snacks.words.jump(-vim.v.count1)
-      end,
-      desc = "Prev Reference",
-      mode = { "n", "t" },
     },
     {
       "<leader>db",
@@ -224,6 +197,20 @@ return {
     },
     -- git
     {
+      "<leader>gg",
+      function()
+        Snacks.lazygit()
+      end,
+      desc = "Lazygit",
+    },
+    {
+      "<leader>gb",
+      function()
+        Snacks.git.blame_line()
+      end,
+      desc = "Git Blame Line",
+    },
+    {
       "<leader>gl",
       function()
         Snacks.picker.git_log()
@@ -303,20 +290,15 @@ return {
       end,
       desc = "Man Pages",
     },
+    -- colorthemes
     {
-      "<leader>sr",
-      function()
-        Snacks.picker.resume()
-      end,
-      desc = "Resume",
-    },
-    {
-      "<leader>uC",
+      "<leader>th",
       function()
         Snacks.picker.colorschemes()
       end,
       desc = "Colorschemes",
     },
+    -- todo comments
   },
   init = function()
     vim.api.nvim_create_autocmd("User", {
