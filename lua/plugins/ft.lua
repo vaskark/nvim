@@ -1,9 +1,9 @@
 return {
-	{
-		"vmchale/ion-vim",
-	},
-	{
-  	"fladson/vim-kitty",
-  	ft = "kitty",
-	},
+  {
+    "vmchale/ion-vim",
+  },
+  {
+    "fladson/vim-kitty",
+    ft = "kitty",
+  },
 }
