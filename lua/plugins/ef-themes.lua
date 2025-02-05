@@ -23,7 +23,6 @@ return {
         blink = true,
         fzf = true,
         mini = true,
-        neogit = true,
         semantic_tokens = false,
         snacks = true,
         treesitter = true,
