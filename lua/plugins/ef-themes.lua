@@ -20,14 +20,10 @@ return {
       },
 
       modules = {
-        blink = true,
-        fzf = true,
         gitsigns = true,
-        mini = true,
         neogit = true,
         snacks = true,
         telescope = true,
-        treesitter = true,
         which_key = true,
       },
 
