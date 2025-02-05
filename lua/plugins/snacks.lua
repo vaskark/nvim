@@ -38,7 +38,7 @@ return {
     },
     explorer = { enabled = true },
     indent = {
-      enabled = true,
+      enabled = false,
       indent = {
         only_scope = true,
       },
@@ -64,7 +64,6 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
-    scroll = { enabled = true },
     statuscolumn = {
       enabled = true,
       folds = {
@@ -111,7 +110,7 @@ return {
       desc = "Delete Buffer",
     },
     {
-      "<leader>cr",
+      "<leader>rf",
       function()
         Snacks.rename.rename_file()
       end,
@@ -204,41 +203,13 @@ return {
       desc = "Lazygit",
     },
     {
-      "<leader>gb",
-      function()
-        Snacks.git.blame_line()
-      end,
-      desc = "Git Blame Line",
-    },
-    {
       "<leader>gl",
       function()
         Snacks.picker.git_log()
       end,
       desc = "Git Log",
     },
-    {
-      "<leader>gs",
-      function()
-        Snacks.picker.git_status()
-      end,
-      desc = "Git Status",
-    },
     -- grep
-    {
-      "<leader>sb",
-      function()
-        Snacks.picker.lines()
-      end,
-      desc = "Buffer Lines",
-    },
-    {
-      "<leader>sB",
-      function()
-        Snacks.picker.grep_buffers()
-      end,
-      desc = "Grep Open Buffers",
-    },
     {
       "<leader>sg",
       function()
@@ -254,7 +225,6 @@ return {
       desc = "Visual selection or word",
       mode = { "n", "x" },
     },
-    -- search
     {
       "<leader>sc",
       function()
@@ -290,11 +260,11 @@ return {
       end,
       desc = "Man Pages",
     },
-    -- colorthemes
+    -- colorschemes
     {
       "<leader>tc",
       function()
-        Snacks.picker.colorschemes()
+        Snacks.picker.colorschemes({ layout = "ivy" })
       end,
       desc = "Colorschemes",
     },
