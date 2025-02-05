@@ -4,12 +4,10 @@ return {
   priority = 1000,
   config = function()
     require("ef-themes").setup({
-      light = "ef-spring", -- Ef-theme to select for light backgrounds
-      dark = "ef-winter", -- Ef-theme to select for dark backgrounds
+      light = "ef-spring",
+      dark = "ef-winter",
       transparent = true,
       styles = {
-        -- Set specific styles for specific highlight groups
-        -- Can be any valid attr-list value. See `:h nvim_set_hl`
         comments = { italic = true },
         keywords = { bold = true },
         functions = {},
@@ -22,8 +20,6 @@ return {
       },
 
       modules = {
-        -- Enable/Disable highlights for a module
-        -- See `h: ef-themes-modules` for the list of available modules
         blink = true,
         fzf = true,
         mini = true,
