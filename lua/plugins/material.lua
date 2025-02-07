@@ -25,6 +25,5 @@ return {
       },
       lualine_style = "stealth", -- default, stealth
     })
-    vim.g.material_style = "darker"
   end,
 }
