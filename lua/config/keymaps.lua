@@ -7,7 +7,7 @@ map({ "n", "i" }, "<C-s>", "<cmd> w <cr>")
 map("n", "<leader><leader>r", "<cmd> source % <cr>", { desc = "Reload file" })
 
 -- exit insert mode
-map("i", "jk", "<esc>", { desc = "Exit insert mode" })
+map("i", "jj", "<esc>", { desc = "Exit insert mode" })
 
 -- copy all
 map("n", "<C-c>", "<cmd> %y+ <cr>")
