@@ -83,6 +83,14 @@ return {
   },
   -- NOTE: Keymaps
   keys = {
+    -- pickers
+    {
+      "<leader><leader>",
+      function()
+        Snacks.picker()
+      end,
+      desc = "Pickers",
+    },
     -- explorer
     {
       "\\",
@@ -92,13 +100,6 @@ return {
       desc = "File Explorer",
     },
     -- find
-    {
-      "<leader>fa",
-      function()
-        Snacks.picker()
-      end,
-      desc = "Pickers",
-    },
     {
       "<leader>fb",
       function()
@@ -157,18 +158,18 @@ return {
       desc = "Git Branches",
     },
     {
+      "<leader>gg",
+      function()
+        Snacks.lazygit()
+      end,
+      desc = "Lazygit",
+    },
+    {
       "<leader>gl",
       function()
         Snacks.picker.git_log()
       end,
       desc = "Git Log",
-    },
-    {
-      "<leader>gL",
-      function()
-        Snacks.picker.git_log_line()
-      end,
-      desc = "Git Log Line",
     },
     {
       "<leader>gs",
@@ -191,28 +192,7 @@ return {
       end,
       desc = "Git Diff (Hunks)",
     },
-    {
-      "<leader>gf",
-      function()
-        Snacks.picker.git_log_file()
-      end,
-      desc = "Git Log File",
-    },
-    -- Grep
-    {
-      "<leader>sb",
-      function()
-        Snacks.picker.lines()
-      end,
-      desc = "Buffer Lines",
-    },
-    {
-      "<leader>sB",
-      function()
-        Snacks.picker.grep_buffers()
-      end,
-      desc = "Grep Open Buffers",
-    },
+    -- grep
     {
       "<leader>sg",
       function()
@@ -230,20 +210,6 @@ return {
     },
     -- search
     {
-      "<leader>s/",
-      function()
-        Snacks.picker.search_history()
-      end,
-      desc = "Search History",
-    },
-    {
-      "<leader>sb",
-      function()
-        Snacks.picker.lines()
-      end,
-      desc = "Buffer Lines",
-    },
-    {
       "<leader>sc",
       function()
         Snacks.picker.command_history()
@@ -251,25 +217,11 @@ return {
       desc = "Command History",
     },
     {
-      "<leader>sC",
-      function()
-        Snacks.picker.commands()
-      end,
-      desc = "Commands",
-    },
-    {
       "<leader>sd",
       function()
         Snacks.picker.diagnostics()
       end,
       desc = "Diagnostics",
-    },
-    {
-      "<leader>sD",
-      function()
-        Snacks.picker.diagnostics_buffer()
-      end,
-      desc = "Buffer Diagnostics",
     },
     {
       "<leader>sh",
@@ -306,6 +258,7 @@ return {
       end,
       desc = "Undo History",
     },
+    -- colorschemes
     {
       "<leader>tc",
       function()
@@ -313,7 +266,7 @@ return {
       end,
       desc = "Colorschemes",
     },
-    -- LSP
+    -- lsp
     {
       "gd",
       function()
@@ -322,49 +275,13 @@ return {
       desc = "Goto Definition",
     },
     {
-      "gD",
-      function()
-        Snacks.picker.lsp_declarations()
-      end,
-      desc = "Goto Declaration",
-    },
-    {
-      "gr",
-      function()
-        Snacks.picker.lsp_references()
-      end,
-      nowait = true,
-      desc = "References",
-    },
-    {
-      "gI",
-      function()
-        Snacks.picker.lsp_implementations()
-      end,
-      desc = "Goto Implementation",
-    },
-    {
-      "gy",
-      function()
-        Snacks.picker.lsp_type_definitions()
-      end,
-      desc = "Goto T[y]pe Definition",
-    },
-    {
       "<leader>ss",
       function()
         Snacks.picker.lsp_symbols()
       end,
       desc = "LSP Symbols",
     },
-    {
-      "<leader>sS",
-      function()
-        Snacks.picker.lsp_workspace_symbols()
-      end,
-      desc = "LSP Workspace Symbols",
-    },
-    -- Other
+    -- other
     {
       "<leader>z",
       function()
@@ -387,6 +304,13 @@ return {
       desc = "Notification History",
     },
     {
+      "<leader>nd",
+      function()
+        Snacks.notifier.hide()
+      end,
+      desc = "Dismiss All Notifications",
+    },
+    {
       "<leader>bd",
       function()
         Snacks.bufdelete()
@@ -399,27 +323,6 @@ return {
         Snacks.rename.rename_file()
       end,
       desc = "Rename File",
-    },
-    {
-      "<leader>gg",
-      function()
-        Snacks.lazygit()
-      end,
-      desc = "Lazygit",
-    },
-    {
-      "<leader>nd",
-      function()
-        Snacks.notifier.hide()
-      end,
-      desc = "Dismiss All Notifications",
-    },
-    {
-      "<c-_>",
-      function()
-        Snacks.terminal()
-      end,
-      desc = "which_key_ignore",
     },
     {
       "]]",
