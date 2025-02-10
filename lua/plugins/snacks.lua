@@ -37,6 +37,7 @@ return {
       },
     },
     explorer = { enabled = true },
+    image = { enabled = true },
     indent = {
       enabled = false,
       indent = {
@@ -64,6 +65,7 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
+    scroll = { enabled = true },
     statuscolumn = {
       enabled = true,
       folds = {
@@ -264,7 +266,7 @@ return {
     {
       "<leader>tc",
       function()
-        Snacks.picker.colorschemes({ layout = "ivy" })
+        Snacks.picker.colorschemes()
       end,
       desc = "Colorschemes",
     },
@@ -286,7 +288,9 @@ return {
         Snacks.toggle.option("spell", { name = "Spelling" }):map("<leader>us")
         Snacks.toggle.option("wrap", { name = "Wrap" }):map("<leader>uw")
         Snacks.toggle.diagnostics():map("<leader>ud")
+        Snacks.toggle.option("background", { off = "light", on = "dark", name = "Dark Background" }):map("<leader>ub")
         Snacks.toggle.indent():map("<leader>ug")
+        Snacks.toggle.dim():map("<leader>uD")
       end,
     })
   end,
