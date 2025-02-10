@@ -83,6 +83,14 @@ return {
   },
   -- NOTE: Keymaps
   keys = {
+    -- explorer
+    {
+      "\\",
+      function()
+        Snacks.explorer()
+      end,
+      desc = "File Explorer",
+    },
     -- find
     {
       "<leader>fa",
@@ -139,13 +147,6 @@ return {
         Snacks.picker.smart()
       end,
       desc = "Smart Find Files",
-    },
-    {
-      "\\",
-      function()
-        Snacks.explorer()
-      end,
-      desc = "File Explorer",
     },
     -- git
     {
