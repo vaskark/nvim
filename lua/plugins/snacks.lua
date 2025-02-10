@@ -83,55 +83,13 @@ return {
   },
   -- NOTE: Keymaps
   keys = {
-    {
-      "<leader>z",
-      function()
-        Snacks.zen()
-      end,
-      desc = "Toggle Zen Mode",
-    },
-    {
-      "<leader>nh",
-      function()
-        Snacks.notifier.show_history()
-      end,
-      desc = "Notifications History",
-    },
-    {
-      "<leader>nd",
-      function()
-        Snacks.notifier.hide()
-      end,
-      desc = "Notifications Dismiss All",
-    },
-    {
-      "<leader>bd",
-      function()
-        Snacks.bufdelete()
-      end,
-      desc = "Delete Buffer",
-    },
-    {
-      "<leader>rf",
-      function()
-        Snacks.rename.rename_file()
-      end,
-      desc = "Rename File",
-    },
-    {
-      "<leader>db",
-      function()
-        Snacks.dashboard()
-      end,
-      desc = "Dashboard",
-    },
     -- find
     {
       "<leader>fa",
       function()
         Snacks.picker()
       end,
-      desc = "Builtins",
+      desc = "Pickers",
     },
     {
       "<leader>fb",
@@ -145,14 +103,7 @@ return {
       function()
         Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
       end,
-      desc = "Find Config Files",
-    },
-    {
-      "\\",
-      function()
-        Snacks.picker.explorer()
-      end,
-      desc = "File Explorer",
+      desc = "Find Config File",
     },
     {
       "<leader>ff",
@@ -169,6 +120,13 @@ return {
       desc = "Find Git Files",
     },
     {
+      "<leader>fp",
+      function()
+        Snacks.picker.projects()
+      end,
+      desc = "Projects",
+    },
+    {
       "<leader>fr",
       function()
         Snacks.picker.recent()
@@ -180,29 +138,15 @@ return {
       function()
         Snacks.picker.smart()
       end,
-      desc = "Find Files (Smart)",
-    },
-    {
-      "<leader>fu",
-      function()
-        Snacks.picker.undo()
-      end,
-      desc = "Undo",
-    },
-    {
-      "<leader>fz",
-      function()
-        Snacks.picker.zoxide()
-      end,
-      desc = "Zoxide",
+      desc = "Smart Find Files",
     },
     -- git
     {
-      "<leader>gg",
+      "<leader>gb",
       function()
-        Snacks.lazygit()
+        Snacks.picker.git_branches()
       end,
-      desc = "Lazygit",
+      desc = "Git Branches",
     },
     {
       "<leader>gl",
@@ -211,7 +155,56 @@ return {
       end,
       desc = "Git Log",
     },
-    -- grep
+    {
+      "<leader>gL",
+      function()
+        Snacks.picker.git_log_line()
+      end,
+      desc = "Git Log Line",
+    },
+    {
+      "<leader>gs",
+      function()
+        Snacks.picker.git_status()
+      end,
+      desc = "Git Status",
+    },
+    {
+      "<leader>gS",
+      function()
+        Snacks.picker.git_stash()
+      end,
+      desc = "Git Stash",
+    },
+    {
+      "<leader>gd",
+      function()
+        Snacks.picker.git_diff()
+      end,
+      desc = "Git Diff (Hunks)",
+    },
+    {
+      "<leader>gf",
+      function()
+        Snacks.picker.git_log_file()
+      end,
+      desc = "Git Log File",
+    },
+    -- Grep
+    {
+      "<leader>sb",
+      function()
+        Snacks.picker.lines()
+      end,
+      desc = "Buffer Lines",
+    },
+    {
+      "<leader>sB",
+      function()
+        Snacks.picker.grep_buffers()
+      end,
+      desc = "Grep Open Buffers",
+    },
     {
       "<leader>sg",
       function()
@@ -227,12 +220,34 @@ return {
       desc = "Visual selection or word",
       mode = { "n", "x" },
     },
+    -- search
+    {
+      "<leader>s/",
+      function()
+        Snacks.picker.search_history()
+      end,
+      desc = "Search History",
+    },
+    {
+      "<leader>sb",
+      function()
+        Snacks.picker.lines()
+      end,
+      desc = "Buffer Lines",
+    },
     {
       "<leader>sc",
       function()
         Snacks.picker.command_history()
       end,
       desc = "Command History",
+    },
+    {
+      "<leader>sC",
+      function()
+        Snacks.picker.commands()
+      end,
+      desc = "Commands",
     },
     {
       "<leader>sd",
@@ -242,11 +257,25 @@ return {
       desc = "Diagnostics",
     },
     {
+      "<leader>sD",
+      function()
+        Snacks.picker.diagnostics_buffer()
+      end,
+      desc = "Buffer Diagnostics",
+    },
+    {
       "<leader>sh",
       function()
         Snacks.picker.help()
       end,
       desc = "Help Pages",
+    },
+    {
+      "<leader>si",
+      function()
+        Snacks.picker.icons()
+      end,
+      desc = "Icons",
     },
     {
       "<leader>sk",
@@ -262,13 +291,143 @@ return {
       end,
       desc = "Man Pages",
     },
-    -- colorschemes
+    {
+      "<leader>su",
+      function()
+        Snacks.picker.undo()
+      end,
+      desc = "Undo History",
+    },
     {
       "<leader>tc",
       function()
         Snacks.picker.colorschemes()
       end,
       desc = "Colorschemes",
+    },
+    -- LSP
+    {
+      "gd",
+      function()
+        Snacks.picker.lsp_definitions()
+      end,
+      desc = "Goto Definition",
+    },
+    {
+      "gD",
+      function()
+        Snacks.picker.lsp_declarations()
+      end,
+      desc = "Goto Declaration",
+    },
+    {
+      "gr",
+      function()
+        Snacks.picker.lsp_references()
+      end,
+      nowait = true,
+      desc = "References",
+    },
+    {
+      "gI",
+      function()
+        Snacks.picker.lsp_implementations()
+      end,
+      desc = "Goto Implementation",
+    },
+    {
+      "gy",
+      function()
+        Snacks.picker.lsp_type_definitions()
+      end,
+      desc = "Goto T[y]pe Definition",
+    },
+    {
+      "<leader>ss",
+      function()
+        Snacks.picker.lsp_symbols()
+      end,
+      desc = "LSP Symbols",
+    },
+    {
+      "<leader>sS",
+      function()
+        Snacks.picker.lsp_workspace_symbols()
+      end,
+      desc = "LSP Workspace Symbols",
+    },
+    -- Other
+    {
+      "<leader>z",
+      function()
+        Snacks.zen()
+      end,
+      desc = "Toggle Zen Mode",
+    },
+    {
+      "<leader>Z",
+      function()
+        Snacks.zen.zoom()
+      end,
+      desc = "Toggle Zoom",
+    },
+    {
+      "<leader>nh",
+      function()
+        Snacks.notifier.show_history()
+      end,
+      desc = "Notification History",
+    },
+    {
+      "<leader>bd",
+      function()
+        Snacks.bufdelete()
+      end,
+      desc = "Delete Buffer",
+    },
+    {
+      "<leader>rf",
+      function()
+        Snacks.rename.rename_file()
+      end,
+      desc = "Rename File",
+    },
+    {
+      "<leader>gg",
+      function()
+        Snacks.lazygit()
+      end,
+      desc = "Lazygit",
+    },
+    {
+      "<leader>nd",
+      function()
+        Snacks.notifier.hide()
+      end,
+      desc = "Dismiss All Notifications",
+    },
+    {
+      "<c-_>",
+      function()
+        Snacks.terminal()
+      end,
+      desc = "which_key_ignore",
+    },
+    {
+      "]]",
+      function()
+        Snacks.words.jump(vim.v.count1)
+      end,
+      desc = "Next Reference",
+      mode = { "n", "t" },
+    },
+    {
+      "[[",
+      function()
+        Snacks.words.jump(-vim.v.count1)
+      end,
+      desc = "Prev Reference",
+      mode = { "n", "t" },
     },
   },
   init = function()
