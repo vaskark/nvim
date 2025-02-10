@@ -140,6 +140,13 @@ return {
       end,
       desc = "Smart Find Files",
     },
+    {
+      "\\",
+      function()
+        Snacks.explorer()
+      end,
+      desc = "File Explorer",
+    },
     -- git
     {
       "<leader>gb",
