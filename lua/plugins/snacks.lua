@@ -281,14 +281,21 @@ return {
     },
     -- other
     {
-      "<leader>z",
+      "<leader>db",
+      function()
+        Snacks.dashboard()
+      end,
+      desc = "Dashboard",
+    },
+    {
+      "<leader>uz",
       function()
         Snacks.zen()
       end,
       desc = "Toggle Zen Mode",
     },
     {
-      "<leader>Z",
+      "<leader>uZ",
       function()
         Snacks.zen.zoom()
       end,
