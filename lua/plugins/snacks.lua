@@ -1,10 +1,8 @@
 return {
-  -- HACK: docs @ https://github.com/folke/snacks.nvim/blob/main/docs
   "folke/snacks.nvim",
   lazy = false,
   priority = 1000,
   ---@type snacks.Config
-  -- NOTE: Options
   opts = {
     bigfile = { enabled = true },
     dashboard = {
