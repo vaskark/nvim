@@ -258,7 +258,7 @@ return {
     },
     -- colorschemes
     {
-      "<leader>tc",
+      "<leader>uC",
       function()
         Snacks.picker.colorschemes()
       end,
