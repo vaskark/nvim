@@ -2,7 +2,7 @@
 require("autocmds")
 require("options")
 require("keymaps")
-require("colorscheme")
+require("colorschemes")
 
 -- lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
