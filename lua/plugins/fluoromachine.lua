@@ -1,6 +1,6 @@
 return {
 	"maxmx03/fluoromachine.nvim",
-	lazy = false,
+	lazy = true,
 	priority = 1000,
 	config = function()
 		require("fluoromachine").setup({

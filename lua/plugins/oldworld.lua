@@ -1,6 +1,6 @@
 return {
   "dgox16/oldworld.nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   opts = {
     variant = "cooler", -- default, oled, cooler
