@@ -48,7 +48,7 @@ opt.scrolloff = 999
 opt.virtualedit = "block"
 opt.inccommand = "split"
 
- opt.foldenable = false
+opt.foldenable = false
 
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
