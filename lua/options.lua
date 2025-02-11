@@ -1,7 +1,9 @@
-local opt = vim.opt
-
+-- global
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+-- local
+local opt = vim.opt
 
 opt.termguicolors = true
 opt.laststatus = 2
