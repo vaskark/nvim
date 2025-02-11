@@ -85,7 +85,7 @@ return {
   keys = {
     -- pickers
     {
-      "<leader><leader>",
+      "<leader><space>",
       function()
         Snacks.picker()
       end,
