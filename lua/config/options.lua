@@ -23,7 +23,6 @@ opt.smartindent = true
 opt.autoindent = true
 opt.breakindent = true
 
-opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
@@ -50,7 +49,16 @@ opt.scrolloff = 999
 opt.virtualedit = "block"
 opt.inccommand = "split"
 
-opt.foldenable = false
+opt.fillchars = {
+  foldopen = "",
+  foldclose = "",
+  fold = " ",
+  foldsep = " ",
+  diff = "╱",
+  eob = " ",
+}
+opt.foldlevel = 99
+opt.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
 
 -- add binaries installed by mason.nvim to path
 -- local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
