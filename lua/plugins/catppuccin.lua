@@ -5,6 +5,7 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
+      compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
       transparent_background = true,
       default_integrations = true,
       integrations = {
