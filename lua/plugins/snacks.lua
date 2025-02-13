@@ -66,17 +66,9 @@ return {
     scroll = { enabled = true },
     statuscolumn = {
       enabled = true,
-      folds = {
-        open = false,
-      },
     },
     words = {
       enabled = true,
-    },
-    styles = {
-      notification = {
-        -- wo = { wrap = true },
-      },
     },
   },
   -- NOTE: Keymaps
