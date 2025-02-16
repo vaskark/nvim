@@ -13,7 +13,11 @@ return {
       nerd_font_variant = "mono",
     },
     completion = {
-      documentation = { window = { border = "single" } },
+      documentation = {
+        window = {
+          border = "single",
+        },
+      },
       list = {
         selection = {
           auto_insert = false,
