@@ -14,12 +14,20 @@ return {
     },
     completion = {
       documentation = { window = { border = "single" } },
+      list = {
+        selection = {
+          auto_insert = false,
+        },
+      },
       menu = {
         -- don't show cmdline completion automatically
         auto_show = function(ctx)
           return ctx.mode ~= "cmdline"
         end,
         border = "single",
+        draw = {
+          treesitter = { "lsp" },
+        },
       },
     },
     signature = {
