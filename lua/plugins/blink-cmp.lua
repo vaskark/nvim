@@ -13,14 +13,18 @@ return {
       nerd_font_variant = "mono",
     },
     completion = {
+      documentation = { window = { border = "single" } },
       menu = {
+        -- don't show cmdline completion automatically
         auto_show = function(ctx)
           return ctx.mode ~= "cmdline"
         end,
         border = "single",
       },
     },
-    signature = { enabled = true },
+    signature = {
+      enabled = true,
+    },
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
     },
