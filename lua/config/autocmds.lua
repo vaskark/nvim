@@ -1,7 +1,7 @@
--- Remove bg for lualine (if supported)
+-- remove bg for lualine (if supported)
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
 
--- Simple LSP progress
+-- simple LSP progress
 vim.api.nvim_create_autocmd("LspProgress", {
   ---@param ev {data: {client_id: integer, params: lsp.ProgressParams}}
   callback = function(ev)
@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("LspProgress", {
   end,
 })
 
--- Restore cursor to file position in previous editing session
+-- restore cursor to file position in previous editing session
 vim.api.nvim_create_autocmd("BufReadPost", {
   callback = function(args)
     local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
@@ -28,19 +28,19 @@ vim.api.nvim_create_autocmd("BufReadPost", {
   end,
 })
 
--- Auto resize splits when the terminal's window is resized
+-- auto resize splits when the terminal's window is resized
 vim.api.nvim_create_autocmd("VimResized", {
   command = "wincmd =",
 })
 
--- Help buffers open to the right
+-- help buffers open to the right
 vim.api.nvim_create_autocmd("FileType", {
   desc = "Automatically Split help Buffers to the right",
   pattern = "help",
   command = "wincmd L",
 })
 
--- Folds
+-- folds
 vim.api.nvim_create_autocmd({ "FileType" }, {
   callback = function()
     if require("nvim-treesitter.parsers").has_parser() then
@@ -52,7 +52,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
--- Markview
+-- markview
 vim.api.nvim_create_autocmd("User", {
   pattern = "MarkviewAttach",
   callback = function(event)
