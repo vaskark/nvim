@@ -1,20 +1,18 @@
 return {
   "marko-cerovac/material.nvim",
   lazy = true,
-  priority = 1000,  
+  priority = 1000,
   config = function()
     require("material").setup({
       contrast = {
-        cursorline = false,
+        cursorline = true,
       },
       plugins = {
         "gitsigns",
         "mini",
         "neogit",
         "neo-tree",
-        "neorg",
         "noice",
-        "nvim-cmp",
         "nvim-web-devicons",
         "telescope",
         "which-key",
