@@ -5,10 +5,5 @@ return {
   opts = {
     transparent = true,
     cache = true,
-    overrides = function()
-      return {
-        NormalFloat = { bg = "none" },
-      }
-    end,
   },
 }
