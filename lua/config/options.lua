@@ -49,14 +49,14 @@ opt.scrolloff = 999
 opt.virtualedit = "block"
 opt.inccommand = "split"
 
--- opt.fillchars = {
+opt.fillchars = {
 --   foldopen = "",
 --   foldclose = "",
 --   fold = " ",
 --   foldsep = " ",
 --   diff = "╱",
---   eob = " ",
--- }
+  eob = " ",
+}
 -- opt.foldlevel = 99
 -- opt.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
 
