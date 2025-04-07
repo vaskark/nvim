@@ -50,14 +50,13 @@ opt.virtualedit = "block"
 opt.inccommand = "split"
 
 opt.fillchars = {
---   foldopen = "",
---   foldclose = "",
---   fold = " ",
---   foldsep = " ",
---   diff = "╱",
+  --   foldopen = "",
+  --   foldclose = "",
+  --   fold = " ",
+  --   foldsep = " ",
+  --   diff = "╱",
   eob = " ",
 }
--- opt.foldlevel = 99
 -- opt.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
 
 opt.foldcolumn = "1" -- '0' is not bad
