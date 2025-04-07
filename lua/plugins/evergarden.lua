@@ -1,9 +1,21 @@
 return {
   "comfysage/evergarden",
-  lazy = true,
   priority = 1000,
   opts = {
-    transparent_background = true,
-    variant = "medium", -- 'hard'|'medium'|'soft'
+    theme = {
+      variant = "fall", -- fall, winter, spring, summer
+      accent = "green",
+    },
+    editor = {
+      transparent_background = true,
+      sign = { color = "none" },
+      float = {
+        color = "mantle",
+        invert_border = false,
+      },
+      completion = {
+        color = "surface0",
+      },
+    },
   },
 }
