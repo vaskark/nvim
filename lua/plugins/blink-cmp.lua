@@ -5,8 +5,6 @@ return {
     "moyiz/blink-emoji.nvim",
   },
   version = "1.*",
-  ---@module 'blink.cmp'
-  ---@type blink.cmp.Config
   opts = {
     keymap = { preset = "default" },
     appearance = {
@@ -24,6 +22,7 @@ return {
       list = {
         selection = {
           auto_insert = false,
+          preselect = true,
         },
       },
       menu = {
@@ -39,14 +38,8 @@ return {
     },
     signature = { enabled = true },
     sources = {
-      default = { "lazydev", "lsp", "path", "snippets", "buffer", "emoji" },
+      default = { "lsp", "path", "snippets", "buffer", "emoji" },
       providers = {
-        lazydev = {
-          name = "LazyDev",
-          module = "lazydev.integrations.blink",
-          -- make lazydev completions top priority (see `:h blink.cmp`)
-          score_offset = 100,
-        },
         emoji = {
           module = "blink-emoji",
           name = "Emoji",
