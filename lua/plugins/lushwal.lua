@@ -1,6 +1,6 @@
 return {
-	"oncomouse/lushwal.nvim",
 	enabled = false,
+	"oncomouse/lushwal.nvim",
 	dependencies = {
 		{ "rktjmp/lush.nvim" },
 		{ "rktjmp/shipwright.nvim" },
