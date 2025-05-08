@@ -40,6 +40,12 @@ return {
     sources = {
       default = { "lazydev", "lsp", "path", "snippets", "buffer", "emoji" },
       providers = {
+        lazydev = {
+          name = "LazyDev",
+          module = "lazydev.integrations.blink",
+          -- make lazydev completions top priority (see `:h blink.cmp`)
+          score_offset = 100,
+        },
         emoji = {
           module = "blink-emoji",
           name = "Emoji",
@@ -53,12 +59,6 @@ return {
               vim.o.filetype
             )
           end,
-        },
-        lazydev = {
-          name = "LazyDev",
-          module = "lazydev.integrations.blink",
-          -- make lazydev completions top priority (see `:h blink.cmp`)
-          score_offset = 100,
         },
       },
     },
