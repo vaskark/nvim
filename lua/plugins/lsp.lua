@@ -26,12 +26,14 @@ return {
         },
       },
     })
+
     require("mason-lspconfig").setup({
       automatic_enable = true,
       ensure_installed = {
         "lua_ls",
       },
     })
+
     require("mason-tool-installer").setup({
       ensure_installed = {
         "stylua",
