@@ -1,19 +1,8 @@
 return {
-  "neovim/nvim-lspconfig",
+  "williamboman/mason.nvim",
   dependencies = {
-    { "williamboman/mason.nvim" },
-    { "williamboman/mason-lspconfig.nvim" },
-    { "WhoIsSethDaniel/mason-tool-installer.nvim" },
-    { "saghen/blink.cmp" },
-    {
-      "folke/lazydev.nvim",
-      ft = "lua",
-      opts = {
-        library = {
-          { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-        },
-      },
-    },
+  	"williamboman/mason-lspconfig.nvim",
+  	"WhoIsSethDaniel/mason-tool-installer.nvim"
   },
   lazy = false,
   config = function()
