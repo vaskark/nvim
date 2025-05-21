@@ -14,11 +14,3 @@ vim.lsp.config("lua_ls", {
   end,
 })
 vim.lsp.enable("lua_ls")
-
--- bashls
--- vim.lsp.config("bashls", {
---   on_init = function()
---     print("bashls now runs in the background")
---   end,
--- })
--- vim.lsp.enable("bashls")
