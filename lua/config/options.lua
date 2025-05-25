@@ -7,7 +7,6 @@ local opt = vim.opt
 
 opt.termguicolors = true
 opt.laststatus = 2
-opt.showmode = false
 
 vim.schedule(function()
   opt.clipboard = "unnamedplus"
@@ -32,7 +31,6 @@ opt.cursorline = true
 
 opt.number = true
 opt.relativenumber = true
-opt.ruler = false
 opt.wrap = true
 
 opt.signcolumn = "yes"
