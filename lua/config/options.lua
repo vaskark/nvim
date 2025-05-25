@@ -29,7 +29,6 @@ opt.mouse = "a"
 opt.hlsearch = true
 
 opt.cursorline = true
-opt.cursorcolumn = false
 
 opt.number = true
 opt.relativenumber = true
@@ -49,15 +48,7 @@ opt.scrolloff = 999
 opt.virtualedit = "block"
 opt.inccommand = "split"
 
-opt.fillchars = {
-  --   foldopen = "",
-  --   foldclose = "",
-  --   fold = " ",
-  --   foldsep = " ",
-  --   diff = "╱",
-  eob = " ",
-}
--- opt.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
+opt.fillchars = "eob: "
 
 opt.foldcolumn = "1" -- '0' is not bad
 opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
@@ -67,3 +58,9 @@ opt.foldenable = true
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
 vim.env.PATH = vim.env.PATH .. (is_windows and ";" or ":") .. vim.fn.stdpath("data") .. "/mason/bin"
+
+-- diagnostics
+vim.diagnostic.config({
+  virtual_text = true,
+  virtual_lines = true,
+})
