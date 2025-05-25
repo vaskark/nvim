@@ -6,6 +6,3 @@ require("config.colorschemes")
 
 -- lazy
 require("config.lazy")
-
--- lsp
-vim.lsp.enable("lua_ls")
