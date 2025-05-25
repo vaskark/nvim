@@ -1,11 +1,7 @@
 return {
-  "williamboman/mason.nvim",
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-  },
-  config = function()
-    require("mason").setup({
+  {
+    "mason-org/mason.nvim",
+    opts = {
       ui = {
         icons = {
           package_installed = "✓",
@@ -13,20 +9,30 @@ return {
           package_uninstalled = "✗",
         },
       },
-    })
+    },
+  },
 
-    require("mason-lspconfig").setup({
-      automatic_enable = true,
+  {
+    "mason-org/mason-lspconfig.nvim",
+    dependencies = {
+      { "mason-org/mason.nvim", opts = {} },
+    },
+    opts = {
       ensure_installed = {
         "lua_ls",
       },
-    })
+    },
+  },
 
-    require("mason-tool-installer").setup({
-      ensure_installed = {
-        "stylua",
-        "shfmt",
-      },
-    })
-  end,
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    config = function()
+      require("mason-tool-installer").setup({
+        ensure_installed = {
+          "stylua",
+          "shfmt",
+        },
+      })
+    end,
+  },
 }
