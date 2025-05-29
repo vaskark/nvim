@@ -17,13 +17,13 @@ vim.api.nvim_create_autocmd("LspProgress", {
   end,
 })
 
--- restore cursor to file position in previous editing session
+-- restore cursor pos on file open
 vim.api.nvim_create_autocmd("BufReadPost", {
-  callback = function(args)
-    local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
-    local line_count = vim.api.nvim_buf_line_count(args.buf)
-    if mark[1] > 0 and mark[1] <= line_count then
-      vim.cmd('normal! g`"zz')
+  pattern = "*",
+  callback = function()
+    local line = vim.fn.line("'\"")
+    if line > 1 and line <= vim.fn.line("$") then
+      vim.cmd("normal! g'\"")
     end
   end,
 })
@@ -40,14 +40,24 @@ vim.api.nvim_create_autocmd("FileType", {
   command = "wincmd L",
 })
 
--- folds
--- vim.api.nvim_create_autocmd({ "FileType" }, {
---   callback = function()
---     if require("nvim-treesitter.parsers").has_parser() then
---       vim.opt.foldmethod = "expr"
---       vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
---     else
---       vim.opt.foldmethod = "syntax"
---     end
---   end,
--- })
+-- spellcheck in md
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  command = "setlocal spell wrap",
+})
+
+-- disable automatic comment on newline
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+  end,
+})
+
+-- highlight text on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({ timeout = 300 })
+  end,
+})
