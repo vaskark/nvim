@@ -11,8 +11,4 @@ return {
       },
     },
   },
-  config = function()
-    require("lspconfig").lua_ls.setup({})
-    require("lspconfig").bashls.setup({})
-  end,
 }
