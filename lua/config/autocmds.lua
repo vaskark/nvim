@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-doc-name, undefined-field
 -- remove bg for lualine (if supported)
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
 
