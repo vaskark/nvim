@@ -4,9 +4,14 @@
     "lua/?.lua",
     "lua/?/init.lua"
   ],
-  "diagnostics.globals": ["vim"],
+  "diagnostics.globals": ["vim",
+        "Snacks"],
   "workspace.checkThirdParty": false,
   "workspace.library": [
     "$VIMRUNTIME"
-  ]
+  ],
+    "diagnostics.disable": [
+        "undefined-doc-name",
+        "undefined-global"
+    ]
 }
