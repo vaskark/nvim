@@ -7,5 +7,5 @@ require("config.colorscheme")
 -- lazy
 require("config.lazy")
 
--- lua_ls
+-- lsp
 vim.lsp.enable("lua_ls")
