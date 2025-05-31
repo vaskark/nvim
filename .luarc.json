@@ -12,6 +12,7 @@
   ],
     "diagnostics.disable": [
         "undefined-doc-name",
-        "undefined-global"
+        "undefined-global",
+        "empty-block"
     ]
 }
