@@ -24,12 +24,15 @@ return {
         },
       },
       sections = {
-        { section = "header" },
-        -- {
-        --   section = "terminal",
-        --   cmd = "ascii-image-converter -C -c ~/Pictures/display/bruce.png",
-        --   height = 30,
-        -- },
+        -- { section = "header" },
+        {
+          section = "terminal",
+          -- cmd = "ascii-image-converter -C -c $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
+          cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+          -- cmd = "chafa -f symbols --symbols wide -s 50x50 --fg-only $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
+          -- cmd = "chafa -f symbols --symbols wide -s 50x50 --fg-only ~/Pictures/display/cylon.png",
+          height = 30,
+        },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       },
