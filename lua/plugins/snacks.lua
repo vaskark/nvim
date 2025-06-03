@@ -28,9 +28,9 @@ return {
         {
           section = "terminal",
           -- cmd = "ascii-image-converter -C -c $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
-          cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
-          -- cmd = "chafa -f symbols --symbols wide -s 50x50 --fg-only $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
-          -- cmd = "chafa -f symbols --symbols wide -s 50x50 --fg-only ~/Pictures/display/cylon.png",
+          -- cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
+          cmd = "chafa -f symbols --symbols wide --fg-only --center on $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
+          -- cmd = "chafa -f symbols --symbols wide --fg-only --center on ~/Pictures/display/cylon.png",
           height = 30,
         },
         { section = "keys", gap = 1, padding = 1 },
