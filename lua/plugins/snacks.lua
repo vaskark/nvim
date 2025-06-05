@@ -29,8 +29,8 @@ return {
           section = "terminal",
           -- cmd = "ascii-image-converter -C -c $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
           -- cmd = "ascii-image-converter -C -c ~/Pictures/display/smith.png",
-          cmd = "chafa -f symbols --symbols wide --fg-only --center on $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
-          -- cmd = "chafa -f symbols --symbols wide --fg-only --center on ~/Pictures/display/cylon.png",
+          -- cmd = "chafa --format symbols --symbols wide --fg-only --center on $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
+          cmd = "chafa --format symbols --symbols wide --fg-only --center on ~/Pictures/display/smith.png",
           height = 30,
         },
         { section = "keys", gap = 1, padding = 1 },
@@ -67,12 +67,8 @@ return {
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
-    statuscolumn = {
-      enabled = true,
-    },
-    words = {
-      enabled = true,
-    },
+    statuscolumn = { enabled = true },
+    words = { enabled = true },
   },
   -- NOTE: Keymaps
   keys = {
