@@ -1,7 +1,4 @@
 return {
-  enabled = false,
-  "neovim/nvim-lspconfig",
-  dependencies = {
     "folke/lazydev.nvim",
     ft = "lua", -- only load on lua files
     opts = {
@@ -11,5 +8,4 @@ return {
         { path = "${3rd}/luv/library", words = { "vim%.uv" } },
       },
     },
-  },
 }
