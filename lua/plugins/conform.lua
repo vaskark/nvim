@@ -4,12 +4,24 @@ return {
   cmd = { "ConformInfo" },
   keys = {
     {
-      "<leader>cf",
+      "<leader>cb",
       function()
         require("conform").format({ async = true })
       end,
       mode = "",
       desc = "Format buffer",
+    },
+    {
+      "<leader>ce",
+      "<cmd> FormatEnable <cr>",
+      mode = "",
+      desc = "Format enable",
+    },
+    {
+      "<leader>cd",
+      "<cmd> FormatDisable <cr>",
+      mode = "",
+      desc = "Format disable",
     },
   },
   ---@module "conform"
@@ -19,6 +31,7 @@ return {
       lua = { "stylua" },
       sh = { "shfmt" },
     },
+
     -- format_on_save = {
     --   timeout_ms = 500,
     --   lsp_format = "fallback",
