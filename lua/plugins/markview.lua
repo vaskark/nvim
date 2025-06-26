@@ -5,4 +5,5 @@ return {
     "nvim-treesitter/nvim-treesitter",
     "nvim-tree/nvim-web-devicons",
   },
+  experimental = { check_rtp_message = false },
 }
