@@ -3,6 +3,7 @@ return {
   lazy = false,
   build = ":TSUpdate",
   dependencies = {
+    "OXY2DEV/markview.nvim",
     "windwp/nvim-ts-autotag",
   },
   config = function()
