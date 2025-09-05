@@ -32,10 +32,10 @@ return {
       sh = { "shfmt" },
     },
 
-    -- format_on_save = {
-    --   timeout_ms = 500,
-    --   lsp_format = "fallback",
-    -- },
+    format_on_save = {
+      timeout_ms = 500,
+      lsp_format = "fallback",
+    },
 
     -- toggle format_on_save
     format_on_save = function(bufnr)
