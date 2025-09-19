@@ -29,7 +29,7 @@ return {
         ensure_installed = {
           "stylua",
           "shfmt",
-          "tree-sitter-cli",
+          -- "tree-sitter-cli",
         },
       })
     end,
