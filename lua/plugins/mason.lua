@@ -17,6 +17,7 @@ return {
     dependencies = { "mason-org/mason.nvim", opts = {} },
     opts = {
       ensure_installed = {
+        -- "bashls",
         "lua_ls",
       },
     },
