@@ -1,6 +1,6 @@
 return {
   "tiagovla/tokyodark.nvim",
-  lazy = true,
+  lazy = false,
   priority = 1000,
   opts = {
     transparent_background = true,

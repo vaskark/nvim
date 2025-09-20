@@ -1,6 +1,6 @@
 return {
   "sho-87/kanagawa-paper.nvim",
-  lazy = true,
+  lazy = false,
   priority = 1000,
   opts = {
     transparent = true,
