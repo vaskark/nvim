@@ -13,8 +13,8 @@ map("i", "jj", "<esc>", { desc = "Exit insert mode" })
 map("n", "<C-c>", "<cmd> %y+ <cr>")
 
 -- buffers
-map("n", "<A-Tab>", "<cmd> bnext <cr>", { desc = "Buffer next" })
-map("n", "<A-S-Tab>", "<cmd> bprevious <cr>", { desc = "Buffer previous" })
+map("n", "<Tab>", "<cmd> bnext <cr>", { desc = "Buffer next" })
+map("n", "<S-Tab>", "<cmd> bprevious <cr>", { desc = "Buffer previous" })
 
 -- clear search highlighting
 map("n", "<esc>", "<cmd> nohlsearch <cr> <esc>")
