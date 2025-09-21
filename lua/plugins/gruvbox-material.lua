@@ -1,6 +1,6 @@
 return {
   "sainnhe/gruvbox-material",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   config = function()
     vim.g.gruvbox_material_better_performance = 1

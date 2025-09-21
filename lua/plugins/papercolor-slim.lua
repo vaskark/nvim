@@ -1,6 +1,6 @@
 return {
   "pappasam/papercolor-theme-slim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   config = function()
     vim.cmd([[
