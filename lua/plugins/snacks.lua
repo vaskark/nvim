@@ -28,8 +28,8 @@ return {
         {
           section = "terminal",
           height = 30,
-          cmd = "chafa --format symbols --symbols wide --align center --fg-only $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
-          -- cmd = "chafa --format symbols --symbols wide --align center --fg-only ~/Pictures/display/smith.png",
+          -- cmd = "chafa --format symbols --symbols wide --align center --fg-only $(fd . -tf -e png -e jpg -e jpeg -e webp ~/Pictures/display | shuf -n 1)",
+          cmd = "chafa --format symbols --symbols wide --align center --fg-only ~/Pictures/display/smith.png",
         },
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
@@ -55,11 +55,11 @@ return {
     picker = {
       enabled = true,
       sources = {
-        buffers = {
-          layout = {
-            preset = "ivy",
-          },
-        },
+        -- buffers = {
+        --   layout = {
+        --     preset = "ivy",
+        --   },
+        -- },
       },
     },
     quickfile = { enabled = true },
