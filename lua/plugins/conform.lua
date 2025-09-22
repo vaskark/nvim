@@ -29,26 +29,28 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
-      sh = { "shfmt", extra_args = { "-ci" } }, -- -ci enables switch_case_indent
+      sh = { "shfmt" },
     },
 
-    format_on_save = {
-      timeout_ms = 500,
-      lsp_format = "fallback",
-    },
-
-    -- toggle format_on_save
+    -- format_on_save
     format_on_save = function(bufnr)
-      -- Disable with a global or buffer-local variable
       if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
         return
       end
       return { timeout_ms = 500, lsp_format = "fallback" }
     end,
 
+    -- format enable
+    vim.api.nvim_create_user_command("FormatEnable", function()
+      vim.b.disable_autoformat = false
+      vim.g.disable_autoformat = false
+    end, {
+      desc = "Re-enable autoformat-on-save",
+    }),
+
+    -- format disable
     vim.api.nvim_create_user_command("FormatDisable", function(args)
       if args.bang then
-        -- FormatDisable! will disable formatting just for this buffer
         vim.b.disable_autoformat = true
       else
         vim.g.disable_autoformat = true
@@ -58,16 +60,9 @@ return {
       bang = true,
     }),
 
-    vim.api.nvim_create_user_command("FormatEnable", function()
-      vim.b.disable_autoformat = false
-      vim.g.disable_autoformat = false
-    end, {
-      desc = "Re-enable autoformat-on-save",
-    }),
-
     formatters = {
       shfmt = {
-        prepend_args = { "-i", "2" },
+        append_args = { "-i", "2" },
       },
     },
   },
