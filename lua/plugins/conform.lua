@@ -32,7 +32,7 @@ return {
       sh = { "shfmt" },
     },
 
-    -- format_on_save
+    -- format on save
     format_on_save = function(bufnr)
       if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
         return
