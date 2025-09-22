@@ -1,5 +1,6 @@
 return {
   "vaskark/papercolor-theme",
+  enabled = false,
   lazy = true,
   priority = 1000,
   config = function()
