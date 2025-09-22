@@ -54,6 +54,6 @@ vim.env.PATH = vim.env.PATH .. (is_windows and ";" or ":") .. vim.fn.stdpath("da
 
 -- diagnostics
 vim.diagnostic.config({
-  virtual_text = true,
-  virtual_lines = true,
+  virtual_text = false,
+  update_in_insert = false,
 })
