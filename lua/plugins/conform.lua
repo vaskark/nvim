@@ -62,7 +62,8 @@ return {
 
     formatters = {
       shfmt = {
-        append_args = { "-i", "2" },
+        args = { "-ci" }, -- enable case indentation
+        -- append_args = { "-i", "2" },
       },
     },
   },
