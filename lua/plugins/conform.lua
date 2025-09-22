@@ -29,7 +29,7 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
-      sh = { "shfmt" },
+      sh = { "shfmt", extra_args = { "-ci" } }, -- -ci enables switch_case_indent
     },
 
     format_on_save = {
