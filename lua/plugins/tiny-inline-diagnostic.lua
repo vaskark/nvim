@@ -7,6 +7,9 @@ return {
       preset = "modern", -- modern, classic, minimal, powerline, ghost, simple, nonerdfont, amongus
       transparent_bg = false,
     })
-    vim.diagnostic.config({ virtual_text = false })
+    vim.diagnostic.config({
+      virtual_text = false,
+      update_in_insert = false,
+    })
   end,
 }
