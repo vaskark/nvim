@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  branch = "master",
   lazy = false,
   build = ":TSUpdate",
   dependencies = {
@@ -8,15 +9,10 @@ return {
   },
   config = function()
     require("nvim-treesitter.configs").setup({
-      highlight = {
-        enable = true,
-      },
-      indent = {
-        enable = true,
-      },
-      autotag = {
-        enable = true,
-      },
+      indent = { enable = true },
+      highlight = { enable = true },
+      folds = { enable = true },
+      autotag = { enable = true },
       ensure_installed = {
         "bash",
         "git_config",
