@@ -4,4 +4,3 @@ return {
   filetypes = { "lua" },
   root_markers = { ".stylua.toml", "stylua.toml" },
 }
-
