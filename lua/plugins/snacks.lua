@@ -89,14 +89,6 @@ return {
       end,
       desc = "File Explorer",
     },
-    -- notifications
-    {
-      "<leader>n",
-      function()
-        Snacks.picker.notifications()
-      end,
-      desc = "Notification History",
-    },
     -- find
     {
       "<leader>fa",
