@@ -15,13 +15,12 @@ map("n", "<C-c>", "<cmd> %y+ <cr>", { desc = "Copy All Text" })
 -- buffers
 map("n", "<Tab>", "<cmd> bnext <cr>", { desc = "Next Buffer" })
 map("n", "<S-Tab>", "<cmd> bprevious <cr>", { desc = "Previous Buffer" })
-map("n", "<leader>bD", "<cmd> %bd <cr>", { desc = "Delete All Buffers" })
 
 -- clear search highlighting
 map("n", "<esc>", "<cmd> nohlsearch <cr> <esc>")
 
 -- split navigation
-map("n", "<C-h>", "<C-w>h", { desc = "Move focus to left window" })
-map("n", "<C-l>", "<C-w>l", { desc = "Move focus to right window" })
-map("n", "<C-j>", "<C-w>j", { desc = "Move focus to lower window" })
-map("n", "<C-k>", "<C-w>k", { desc = "Move focus to upper window" })
+map("n", "<C-h>", "<C-w>h", { desc = "Move Focus to Left Window" })
+map("n", "<C-l>", "<C-w>l", { desc = "Move Focus to Right Window" })
+map("n", "<C-j>", "<C-w>j", { desc = "Move Focus to Lower Window" })
+map("n", "<C-k>", "<C-w>k", { desc = "Move Focus to Upper Window" })
