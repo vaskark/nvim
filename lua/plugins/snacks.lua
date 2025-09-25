@@ -83,7 +83,7 @@ return {
     },
     -- find
     {
-      "<leader>fa",
+      "<leader>fp",
       function()
         Snacks.picker()
       end,
@@ -118,7 +118,7 @@ return {
       desc = "Find Git Files",
     },
     {
-      "<leader>fp",
+      "<leader>fP",
       function()
         Snacks.picker.projects()
       end,
@@ -182,6 +182,20 @@ return {
       desc = "Git Diff (Hunks)",
     },
     -- grep
+    {
+      "<leader>sb",
+      function()
+        Snacks.picker.lines()
+      end,
+      desc = "Buffer Lines",
+    },
+    {
+      "<leader>sB",
+      function()
+        Snacks.picker.grep_buffers()
+      end,
+      desc = "Open Buffers",
+    },
     {
       "<leader>sg",
       function()
