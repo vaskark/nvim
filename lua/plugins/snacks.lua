@@ -124,7 +124,7 @@ return {
       function()
         Snacks.picker()
       end,
-      desc = "Find All Pickers",
+      desc = "All Pickers",
     },
     {
       "<leader>fs",
