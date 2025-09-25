@@ -350,16 +350,16 @@ return {
     {
       "<leader>sm",
       function()
-        Snacks.picker.marks()
+        Snacks.picker.man()
       end,
-      desc = "Marks",
+      desc = "Man Pages",
     },
     {
       "<leader>sM",
       function()
-        Snacks.picker.man()
+        Snacks.picker.marks()
       end,
-      desc = "Man Pages",
+      desc = "Marks",
     },
     {
       "<leader>sp",
