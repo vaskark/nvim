@@ -75,7 +75,7 @@ return {
   keys = {
     -- Dashboard
     {
-      "<leader>db",
+      "<leader>d",
       function()
         Snacks.dashboard()
       end,
