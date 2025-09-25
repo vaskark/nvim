@@ -6,5 +6,5 @@ return {
     "folke/snacks.nvim",
   },
   config = true,
-  vim.keymap.set("n", "<leader>ng", "<cmd> Neogit <cr>", { desc = "Neogit" }),
+  vim.keymap.set("n", "<leader>gn", "<cmd> Neogit <cr>", { desc = "Neogit" }),
 }

@@ -64,6 +64,7 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
+    scratch = { enabled = true },
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
@@ -71,14 +72,6 @@ return {
   },
   -- NOTE: Keymaps
   keys = {
-    -- pickers
-    {
-      "<leader>fa",
-      function()
-        Snacks.picker()
-      end,
-      desc = "Pickers",
-    },
     -- explorer
     {
       "\\",
@@ -88,6 +81,13 @@ return {
       desc = "File Explorer",
     },
     -- find
+    {
+      "<leader>fa",
+      function()
+        Snacks.picker()
+      end,
+      desc = "Pickers",
+    },
     {
       "<leader>fb",
       function()
@@ -269,7 +269,7 @@ return {
       end,
       desc = "LSP Symbols",
     },
-    -- other
+    -- dash
     {
       "<leader>db",
       function()
@@ -277,6 +277,7 @@ return {
       end,
       desc = "Dashboard",
     },
+    -- zen
     {
       "<leader>uz",
       function()
@@ -291,6 +292,7 @@ return {
       end,
       desc = "Toggle Zoom",
     },
+    -- notifications
     {
       "<leader>nh",
       function()
@@ -305,6 +307,7 @@ return {
       end,
       desc = "Dismiss All Notifications",
     },
+    -- buffers
     {
       "<leader>bd",
       function()
@@ -312,6 +315,7 @@ return {
       end,
       desc = "Delete Buffer",
     },
+    -- rename
     {
       "<leader>rf",
       function()
@@ -319,6 +323,22 @@ return {
       end,
       desc = "Rename File",
     },
+    -- scratch
+    {
+      "<leader>.",
+      function()
+        Snacks.scratch()
+      end,
+      desc = "Toggle Scratch Buffer",
+    },
+    {
+      "<leader>S",
+      function()
+        Snacks.scratch.select()
+      end,
+      desc = "Select Scratch Buffer",
+    },
+    -- navigate
     {
       "]]",
       function()
