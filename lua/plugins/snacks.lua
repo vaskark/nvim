@@ -39,12 +39,8 @@ return {
     image = { enabled = true },
     indent = {
       enabled = false,
-      indent = {
-        only_scope = true,
-      },
-      scope = {
-        underline = true,
-      },
+      indent = { only_scope = true },
+      scope = { underline = true },
       chunk = { enabled = true },
     },
     input = { enabled = true },
