@@ -436,7 +436,7 @@ return {
       function()
         Snacks.bufdelete()
       end,
-      desc = "Delete Buffer",
+      desc = "Delete Current Buffer",
     },
     {
       "<leader>cR",
