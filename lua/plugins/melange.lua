@@ -1,6 +1,6 @@
 return {
   "savq/melange-nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   config = function()
     local group = vim.api.nvim_create_augroup("OverrideMelange", {})

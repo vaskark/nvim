@@ -1,6 +1,6 @@
 return {
   "qaptoR-nvim/chocolatier.nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   config = true,
   opts = {

@@ -1,6 +1,6 @@
 return {
   "Everblush/nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   name = "everblush",
   config = function()

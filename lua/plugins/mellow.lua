@@ -1,6 +1,6 @@
 return {
   "mellow-theme/mellow.nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   config = function()
     vim.g.mellow_transparent = true
