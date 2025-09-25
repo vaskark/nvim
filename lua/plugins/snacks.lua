@@ -240,25 +240,11 @@ return {
     },
     -- search
     {
-      '<leader>s"',
-      function()
-        Snacks.picker.registers()
-      end,
-      desc = "Registers",
-    },
-    {
       "<leader>s/",
       function()
         Snacks.picker.search_history()
       end,
       desc = "Search History",
-    },
-    {
-      "<leader>sa",
-      function()
-        Snacks.picker.autocmds()
-      end,
-      desc = "Autocmds",
     },
     {
       "<leader>sb",
@@ -273,13 +259,6 @@ return {
         Snacks.picker.command_history()
       end,
       desc = "Command History",
-    },
-    {
-      "<leader>sC",
-      function()
-        Snacks.picker.commands()
-      end,
-      desc = "Commands",
     },
     {
       "<leader>sd",
@@ -331,13 +310,6 @@ return {
       desc = "Keymaps",
     },
     {
-      "<leader>sl",
-      function()
-        Snacks.picker.loclist()
-      end,
-      desc = "Location List",
-    },
-    {
       "<leader>sm",
       function()
         Snacks.picker.man()
@@ -345,32 +317,11 @@ return {
       desc = "Man Pages",
     },
     {
-      "<leader>sM",
-      function()
-        Snacks.picker.marks()
-      end,
-      desc = "Marks",
-    },
-    {
       "<leader>sp",
       function()
         Snacks.picker.lazy()
       end,
       desc = "Search for Plugin Spec",
-    },
-    {
-      "<leader>sq",
-      function()
-        Snacks.picker.qflist()
-      end,
-      desc = "Quickfix List",
-    },
-    {
-      "<leader>sR",
-      function()
-        Snacks.picker.resume()
-      end,
-      desc = "Resume",
     },
     {
       "<leader>su",
