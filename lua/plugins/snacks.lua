@@ -477,13 +477,6 @@ return {
       desc = "Notification History",
     },
     {
-      "<leader>un",
-      function()
-        Snacks.notifier.hide()
-      end,
-      desc = "Dismiss All Notifications",
-    },
-    {
       "<leader>bd",
       function()
         Snacks.bufdelete()
@@ -496,6 +489,13 @@ return {
         Snacks.rename.rename_file()
       end,
       desc = "Rename File",
+    },
+    {
+      "<leader>un",
+      function()
+        Snacks.notifier.hide()
+      end,
+      desc = "Dismiss All Notifications",
     },
     {
       "]]",
