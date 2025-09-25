@@ -218,7 +218,7 @@ return {
       end,
       desc = "Git Log File",
     },
-    -- Grep
+    -- grep
     {
       "<leader>sb",
       function()
@@ -396,7 +396,7 @@ return {
       end,
       desc = "Colorschemes",
     },
-    -- LSP
+    -- lsp
     {
       "gd",
       function()
@@ -447,7 +447,7 @@ return {
       end,
       desc = "LSP Workspace Symbols",
     },
-    -- Other
+    -- other
     {
       "<leader>z",
       function()
