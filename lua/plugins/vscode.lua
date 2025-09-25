@@ -1,6 +1,6 @@
 return {
   "Mofiqul/vscode.nvim",
-  lazy = true,
+  lazy = false,
   priority = 1000,
   opts = {
     transparent = true,

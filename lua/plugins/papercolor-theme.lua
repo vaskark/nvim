@@ -1,7 +1,7 @@
 return {
   "vaskark/papercolor-theme",
   enabled = false,
-  lazy = true,
+  lazy = false,
   priority = 1000,
   config = function()
     vim.g.PaperColor_Theme_Options = {
