@@ -81,7 +81,15 @@ return {
       end,
       desc = "Dashboard",
     },
-    -- Top Pickers & Explorer
+    -- Explorer
+    {
+      "\\",
+      function()
+        Snacks.explorer()
+      end,
+      desc = "File Explorer",
+    },
+    -- Top Pickers
     {
       "<leader>,",
       function()
@@ -109,13 +117,6 @@ return {
         Snacks.picker.notifications()
       end,
       desc = "Notification History",
-    },
-    {
-      "<leader>e",
-      function()
-        Snacks.explorer()
-      end,
-      desc = "File Explorer",
     },
     -- find
     {
