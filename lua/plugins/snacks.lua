@@ -196,6 +196,21 @@ return {
       end,
       desc = "Git Log File",
     },
+    {
+      "<leader>gB",
+      function()
+        Snacks.gitbrowse()
+      end,
+      desc = "Git Browse",
+      mode = { "n", "v" },
+    },
+    {
+      "<leader>gg",
+      function()
+        Snacks.lazygit()
+      end,
+      desc = "Lazygit",
+    },
     -- grep
     {
       "<leader>sb",
@@ -474,21 +489,6 @@ return {
         Snacks.rename.rename_file()
       end,
       desc = "Rename File",
-    },
-    {
-      "<leader>gB",
-      function()
-        Snacks.gitbrowse()
-      end,
-      desc = "Git Browse",
-      mode = { "n", "v" },
-    },
-    {
-      "<leader>gg",
-      function()
-        Snacks.lazygit()
-      end,
-      desc = "Lazygit",
     },
     {
       "<leader>un",
