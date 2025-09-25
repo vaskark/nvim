@@ -73,7 +73,7 @@ return {
   },
   -- NOTE: Keymaps
   keys = {
-    -- Dashboard
+    -- dashboard
     {
       "<leader>D",
       function()
@@ -81,7 +81,7 @@ return {
       end,
       desc = "Dashboard",
     },
-    -- Explorer
+    -- explorer
     {
       "\\",
       function()
@@ -89,21 +89,7 @@ return {
       end,
       desc = "File Explorer",
     },
-    -- Top Pickers
-    {
-      "<leader>,",
-      function()
-        Snacks.picker.buffers()
-      end,
-      desc = "Buffers",
-    },
-    {
-      "<leader>:",
-      function()
-        Snacks.picker.command_history()
-      end,
-      desc = "Command History",
-    },
+    -- notifications
     {
       "<leader>n",
       function()
