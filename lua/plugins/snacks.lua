@@ -85,14 +85,15 @@ return {
       end,
       desc = "File Explorer",
     },
-    -- find
+    -- pickers
     {
-      "<leader>fa",
+      "<leader>pa",
       function()
         Snacks.picker()
       end,
       desc = "All Pickers",
     },
+    -- find
     {
       "<leader>fs",
       function()
