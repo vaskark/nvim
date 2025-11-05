@@ -1,4 +1,4 @@
--- remove bg for lualine (if supported)
+-- colorschemes
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
 vim.cmd([[autocmd ColorScheme * highlight Normal guibg=none]])
 
