@@ -1,5 +1,6 @@
 -- remove bg for lualine (if supported)
--- vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
+vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
+vim.cmd([[autocmd ColorScheme * highlight Normal guibg=none]])
 
 -- simple LSP progress
 vim.api.nvim_create_autocmd("LspProgress", {
@@ -41,10 +42,10 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- spellcheck in md
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = "markdown",
---   command = "setlocal spell wrap",
--- })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  command = "setlocal spell wrap",
+})
 
 -- disable automatic comment on newline
 vim.api.nvim_create_autocmd("FileType", {
