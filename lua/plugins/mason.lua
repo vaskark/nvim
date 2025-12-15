@@ -17,7 +17,7 @@ return {
     dependencies = { "mason-org/mason.nvim", opts = {} },
     opts = {
       ensure_installed = {
-        -- "bashls",
+        "bashls",
         "lua_ls",
       },
     },
@@ -30,7 +30,7 @@ return {
         ensure_installed = {
           "stylua",
           "shfmt",
-          -- "tree-sitter-cli",
+          "tree-sitter-cli",
         },
       })
     end,
