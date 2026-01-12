@@ -1,5 +1,6 @@
 return {
   "saghen/blink.cmp",
+  event = { "InsertEnter", "CmdwinEnter" },
   dependencies = {
     "rafamadriz/friendly-snippets",
     "moyiz/blink-emoji.nvim",

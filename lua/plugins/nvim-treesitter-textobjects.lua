@@ -1,6 +1,13 @@
 return {
   "nvim-treesitter/nvim-treesitter-textobjects",
   branch = "main",
+  keys = {
+    { "am", mode = { "x", "o" } },
+    { "im", mode = { "x", "o" } },
+    { "ac", mode = { "x", "o" } },
+    { "ic", mode = { "x", "o" } },
+    { "as", mode = { "x", "o" } },
+  },
   config = function()
     require("nvim-treesitter-textobjects").setup({
       select = {
