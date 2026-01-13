@@ -6,6 +6,5 @@ return {
   keys = {
     { "Cw", desc = "Open clipboard manager" },
   },
-  -- Optional: Load plugin when yanking text
   event = { "TextYankPost" },
 }
