@@ -1,6 +1,5 @@
 return {
   "atiladefreitas/lazyclip",
-  enabled = false,
   config = function()
     require("lazyclip").setup()
   end,
