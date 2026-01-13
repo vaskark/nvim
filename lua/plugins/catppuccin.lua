@@ -5,18 +5,13 @@ return {
   config = function()
     require("catppuccin").setup({
       compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
+      flavour = "auto", -- latte, frappe, macchiato, mocha
       transparent_background = true,
-      default_integrations = true,
-      integrations = {
-        blink_cmp = true,
-        diffview = true,
-        mason = true,
-        neotree = true,
-        noice = true,
-        notify = true,
-        snacks = true,
-        which_key = true,
+      float = {
+        transparent = true,
+        solid = false,
       },
+      auto_integrations = true,
     })
   end,
 }
