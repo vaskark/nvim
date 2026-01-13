@@ -1,5 +1,6 @@
 return {
   "savq/melange-nvim",
+  lazy = true,
   config = function()
     local group = vim.api.nvim_create_augroup("OverrideMelange", {})
     vim.api.nvim_create_autocmd("ColorScheme", {

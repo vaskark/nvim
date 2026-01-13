@@ -1,5 +1,6 @@
 return {
   "sainnhe/everforest",
+  lazy = true,
   priority = 1000,
   config = function()
     vim.g.everforest_background = "medium" -- hard, medium (default), soft

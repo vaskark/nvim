@@ -1,5 +1,6 @@
 return {
   "comfysage/evergarden",
+  lazy = true,
   priority = 1000,
   opts = {
     theme = {

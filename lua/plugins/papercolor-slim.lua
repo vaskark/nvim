@@ -1,5 +1,6 @@
 return {
   "pappasam/papercolor-theme-slim",
+  lazy = true,
   config = function()
     vim.cmd([[
     augroup custom_papercolorslim_transparent_background
