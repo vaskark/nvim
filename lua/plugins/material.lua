@@ -7,13 +7,12 @@ return {
         cursorline = true,
       },
       plugins = {
-        "gitsigns",
         "mini",
+        "gitsigns",
         "neogit",
         "neo-tree",
         "noice",
         "nvim-web-devicons",
-        "telescope",
         "which-key",
       },
       disable = {

@@ -2,6 +2,7 @@ return {
   "0xstepit/flow.nvim",
   priority = 1000,
   tag = "v2.0.1",
+
   opts = {
     theme = {
       style = "dark", --  "dark" | "light"

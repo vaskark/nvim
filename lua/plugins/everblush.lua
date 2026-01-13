@@ -1,6 +1,5 @@
 return {
   "Everblush/nvim",
-  priority = 1000,
   name = "everblush",
   config = function()
     require("everblush").setup({
