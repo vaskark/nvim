@@ -14,7 +14,6 @@ return {
         "gitignore",
         "ini",
         "json",
-        "jsonc",
         "kdl",
         "kitty",
         "lua",
