@@ -6,6 +6,8 @@ return {
     "moyiz/blink-emoji.nvim",
   },
   version = "1.*",
+  ---@module 'blink.cmp'
+  ---@type blink.cmp.Config
   opts = {
     keymap = { preset = "default" },
     appearance = {
