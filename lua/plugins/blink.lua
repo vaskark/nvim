@@ -78,7 +78,7 @@ return {
             return vim.tbl_contains(
               -- Enable emoji completion only for git commits and markdown.
               -- By default, enabled for all file-types.
-              { "gitcommit", "markdown" },
+              { "gitcommit", "markdown", "text" },
               vim.o.filetype
             )
           end,
