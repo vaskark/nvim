@@ -70,6 +70,6 @@ vim.api.nvim_create_autocmd("FileType", {
 -- highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function()
-    (vim.hl or vim.highlight).on_yank({ timeout = 500 })
+    (vim.hl or vim.highlight).on_yank({ timeout = 300 })
   end,
 })
