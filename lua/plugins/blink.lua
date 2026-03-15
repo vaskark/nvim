@@ -16,7 +16,7 @@ return {
     },
     completion = {
       documentation = {
-        auto_show = enabled,
+        auto_show = true,
         auto_show_delay_ms = 500,
         window = {
           border = "single",
@@ -36,6 +36,9 @@ return {
         draw = {
           treesitter = { "lsp" },
         },
+      },
+      ghost_text = {
+        enabled = true,
       },
     },
     signature = { enabled = true },
