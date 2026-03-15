@@ -3,7 +3,7 @@ return {
   event = { "InsertEnter", "CmdwinEnter" },
   dependencies = {
     "rafamadriz/friendly-snippets",
-    "moyiz/blink-emoji.nvim",
+    -- "moyiz/blink-emoji.nvim",
   },
   version = "1.*",
   ---@module 'blink.cmp'
