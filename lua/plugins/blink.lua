@@ -9,7 +9,6 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    keymap = { preset = "default" },
     appearance = {
       use_nvim_cmp_as_default = true,
       nerd_font_variant = "mono",
@@ -42,6 +41,8 @@ return {
         enabled = false,
       },
     },
+    fuzzy = { implementation = "prefer_rust_with_warning" },
+    keymap = { preset = "default" },
     signature = { enabled = true },
     sources = {
       default = { "lazydev", "lsp", "path", "snippets", "buffer", "emoji" },
@@ -85,7 +86,6 @@ return {
         },
       },
     },
-    fuzzy = { implementation = "prefer_rust_with_warning" },
   },
   opts_extend = { "sources.default" },
 }
