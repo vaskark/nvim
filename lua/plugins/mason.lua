@@ -16,6 +16,7 @@ return {
     "mason-org/mason-lspconfig.nvim",
     dependencies = { "mason-org/mason.nvim", opts = {} },
     opts = {
+      auto_update = true,
       ensure_installed = {
         "bashls",
         "lua_ls",
@@ -27,6 +28,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     config = function()
       require("mason-tool-installer").setup({
+        auto_update = true,
         ensure_installed = {
           "stylua",
           "shfmt",
