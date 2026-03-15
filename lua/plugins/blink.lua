@@ -29,8 +29,7 @@ return {
         },
       },
       menu = {
-        -- don't show cmdline completion automatically
-        auto_show = function(ctx)
+        auto_show = function(ctx) -- don't show cmdline completion automatically
           return ctx.mode ~= "cmdline"
         end,
         border = "single",
