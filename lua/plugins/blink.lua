@@ -34,7 +34,6 @@ return {
         end,
         border = "single",
         draw = {
-          treesitter = { "lsp" },
           columns = { { "kind_icon" }, { "label", gap = 1 } },
           components = {
             label = {
@@ -46,6 +45,7 @@ return {
               end,
             },
           },
+          treesitter = { "lsp" },
         },
       },
       ghost_text = {
