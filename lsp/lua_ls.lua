@@ -14,8 +14,10 @@ return {
   },
   settings = {
     Lua = {
-      runtime = { version = "LuaJIT" }, -- Neovim uses LuaJIT
-      diagnostics = { globals = { "vim" } }, -- Recognize 'vim' global
+      codeLens = { enable = true },
+      hint = { enable = true, semicolon = "Disable" },
+      runtime = { version = "LuaJIT" },
+      diagnostics = { globals = { "vim" } },
     },
   },
 }
