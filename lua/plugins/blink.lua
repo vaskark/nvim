@@ -16,7 +16,7 @@ return {
     },
     completion = {
       documentation = {
-        auto_show = true,
+        auto_show = enabled,
         auto_show_delay_ms = 500,
         window = {
           border = "single",
@@ -52,7 +52,6 @@ return {
           name = "lsp",
           enabled = true,
           module = "blink.cmp.sources.lsp",
-          kind = "LSP",
           score_offset = 950,
         },
         snippets = {
