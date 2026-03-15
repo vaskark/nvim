@@ -4,7 +4,4 @@ require("config.options")
 require("config.keymaps")
 require("config.colorscheme")
 require("config.lazy")
-
--- lsp
-vim.lsp.enable("lua_ls")
-vim.lsp.enable("bashls")
+require("config.lsp")
