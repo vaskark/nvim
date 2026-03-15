@@ -18,13 +18,22 @@ vim.api.nvim_create_autocmd("LspProgress", {
   end,
 })
 
--- restore cursor pos on file open
+-- auto-create dir when saving a file
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  callback = function(event)
+    local file = vim.uv.fs_realpath(event.match) or event.match
+    vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
+  end,
+})
+
+-- go to last loc when opening a buffer
 vim.api.nvim_create_autocmd("BufReadPost", {
-  pattern = "*",
-  callback = function()
-    local line = vim.fn.line("'\"")
-    if line > 1 and line <= vim.fn.line("$") then
-      vim.cmd("normal! g'\"")
+  callback = function(event)
+    local exclude = { "gitcommit" } -- don't remember position in commit messages
+    local mark = vim.api.nvim_buf_get_mark(event.buf, '"')
+    local lcount = vim.api.nvim_buf_line_count(event.buf)
+    if mark[1] > 0 and mark[1] <= lcount then
+      pcall(vim.api.nvim_win_set_cursor, 0, mark)
     end
   end,
 })
@@ -41,10 +50,13 @@ vim.api.nvim_create_autocmd("FileType", {
   command = "wincmd L",
 })
 
--- spellcheck in md
+-- wrap and check for spell in text filetypes
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
-  command = "setlocal spell wrap",
+  pattern = { "text", "markdown", "gitcommit" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = true
+  end,
 })
 
 -- disable automatic comment on newline
@@ -55,10 +67,9 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- highlight text on yank
+-- highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
-  pattern = "*",
   callback = function()
-    vim.hl.on_yank({ timeout = 300 })
+    (vim.hl or vim.highlight).on_yank({ timeout = 300 })
   end,
 })
