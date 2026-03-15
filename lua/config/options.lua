@@ -51,7 +51,6 @@ opt.writebackup = false -- Don't create backup before writing
 opt.swapfile = false -- Don't create swap files
 opt.undofile = true -- Persistent undo
 opt.undolevels = 10000
-opt.undodir = vim.fn.expand("~/.vim/undodir") -- Undo directory
 opt.updatetime = 300 -- Faster completion
 opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
 opt.ttimeoutlen = 0 -- Key code timeout
