@@ -125,6 +125,5 @@ opt.shortmess:append({ W = true, I = true, c = true, C = true })
 
 -- diagnostics
 vim.diagnostic.config({
-  virtual_lines = false,
   virtual_text = false,
 })
