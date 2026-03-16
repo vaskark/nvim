@@ -41,7 +41,7 @@ return {
       },
     },
     fuzzy = { implementation = "prefer_rust_with_warning" },
-    keymap = { preset = "super-tab" },
+    keymap = { preset = "default" },
     signature = { enabled = true },
     sources = {
       default = { "lazydev", "lsp", "path", "snippets", "buffer", "emoji" },
