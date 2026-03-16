@@ -21,6 +21,6 @@ map("n", "<esc>", "<cmd> nohlsearch <cr> <esc>")
 
 -- split navigation
 map("n", "<C-h>", "<C-w>h", { desc = "Move Focus to Left Window" })
-map("n", "<C-l>", "<C-w>l", { desc = "Move Focus to Right Window" })
 map("n", "<C-j>", "<C-w>j", { desc = "Move Focus to Lower Window" })
 map("n", "<C-k>", "<C-w>k", { desc = "Move Focus to Upper Window" })
+map("n", "<C-l>", "<C-w>l", { desc = "Move Focus to Right Window" })
