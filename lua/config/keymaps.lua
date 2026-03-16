@@ -4,7 +4,7 @@ local map = vim.keymap.set
 map({ "n", "i" }, "<C-s>", "<cmd> w <cr>", { desc = "Save File" })
 
 -- reload
-map("n", "<leader><leader>r", "<cmd> source % <cr>", { desc = "Reload File" })
+map("n", "<leader><leader>r", "<cmd> update <cr> <cmd> source <cr>", { desc = "Reload File" })
 
 -- exit insert mode
 map("i", "jj", "<esc>", { desc = "Exit Insert Mode" })
