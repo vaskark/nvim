@@ -105,9 +105,13 @@ vim.g.autoformat = true
 vim.g.trouble_lualine = true
 
 opt.fillchars = {
-  fold = " ",
   diff = "╱",
   eob = " ",
+  fold = " ",
+  foldopen = "",
+  foldsep = " ",
+  foldinner = " ",
+  foldclose = "",
 }
 
 opt.jumpoptions = "view"
