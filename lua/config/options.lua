@@ -75,7 +75,11 @@ opt.encoding = "UTF-8" -- Set encoding
 -- folding
 opt.smoothscroll = true
 vim.wo.foldmethod = "expr"
-opt.foldlevel = 99 -- Start with all folds open
+opt.foldcolumn = "1"
+opt.foldlevel = 1
+opt.foldlevelstart = 99
+opt.foldenable = true
+opt.foldclose = "all"
 opt.formatoptions = "jcroqlnt" -- tcqj
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
@@ -101,10 +105,7 @@ vim.g.autoformat = true
 vim.g.trouble_lualine = true
 
 opt.fillchars = {
-  --  foldopen = "",
-  --  foldclose = "",
   fold = " ",
-  foldsep = " ",
   diff = "╱",
   eob = " ",
 }
