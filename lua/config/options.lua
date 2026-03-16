@@ -71,9 +71,9 @@ opt.mouse = "a" -- Enable mouse support
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 opt.modifiable = true -- Allow buffer modifications
 opt.encoding = "UTF-8" -- Set encoding
+opt.smoothscroll = true
 
 -- folding
-opt.smoothscroll = true
 vim.wo.foldmethod = "expr"
 opt.foldcolumn = "1"
 opt.foldlevel = 1
