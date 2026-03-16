@@ -5,6 +5,7 @@ vim.g.maplocalleader = " "
 -- local
 local opt = vim.opt
 
+-- lines
 opt.number = true -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true -- Highlight current line
