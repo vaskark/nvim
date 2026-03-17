@@ -6,6 +6,7 @@ return {
     "moyiz/blink-emoji.nvim",
   },
   version = "1.*",
+  -- branch = "v1",
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
