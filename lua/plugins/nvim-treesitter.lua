@@ -1,12 +1,51 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  branch = "main",
-  lazy = false,
-  build = ":TSUpdate",
-  dependencies = {
-    "OXY2DEV/markview.nvim",
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+    lazy = false,
+    build = ":TSUpdate",
+    dependencies = {
+      "OXY2DEV/markview.nvim",
+    },
+    init = function()
+      vim.env.CC = "clang"
+    end,
   },
-  init = function()
-    vim.env.CC = "clang"
-  end,
+  {
+    "MeanderingProgrammer/treesitter-modules.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    ---@module 'treesitter-modules'
+    ---@type ts.mod.UserConfig
+    opts = {},
+    config = function()
+      require("treesitter-modules").setup({
+        ensure_installed = {
+          "bash",
+          "css",
+          "gitcommit",
+          "git_config",
+          "gitignore",
+          "ini",
+          "json",
+          "kdl",
+          "kitty",
+          "lua",
+          "markdown",
+          "markdown_inline",
+          "passwd",
+          "query",
+          "regex",
+          "ssh_config",
+          "toml",
+          "vim",
+          "vimdoc",
+          "yaml",
+        },
+        fold = { enable = true },
+        highlight = { enable = true },
+        incremental_selection = { enable = true },
+        indent = { enable = true },
+      })
+    end,
+  },
 }
