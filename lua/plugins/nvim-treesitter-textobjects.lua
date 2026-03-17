@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter-textobjects",
-  -- enabled = false,
   branch = "main",
   keys = {
     { "am", mode = { "x", "o" } },

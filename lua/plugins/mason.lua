@@ -1,18 +1,5 @@
 return {
   {
-    "mason-org/mason.nvim",
-    opts = {
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
-    },
-  },
-
-  {
     "mason-org/mason-lspconfig.nvim",
     dependencies = { "mason-org/mason.nvim", opts = {} },
     opts = {
@@ -20,6 +7,21 @@ return {
       ensure_installed = {
         "bashls",
         "lua_ls",
+        "stylua",
+      },
+      dependencies = {
+        {
+          "mason-org/mason.nvim",
+          opts = {
+            ui = {
+              icons = {
+                package_installed = "✓",
+                package_pending = "➜",
+                package_uninstalled = "✗",
+              },
+            },
+          },
+        },
       },
     },
   },

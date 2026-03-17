@@ -122,8 +122,3 @@ opt.list = true -- Show some invisible characters (tabs...
 opt.shiftround = true -- Round indent
 opt.shiftwidth = 2 -- Size of an indent
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
-
--- diagnostics
-vim.diagnostic.config({
-  virtual_text = false,
-})
