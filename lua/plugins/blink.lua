@@ -6,9 +6,6 @@ return {
     "moyiz/blink-emoji.nvim",
   },
   version = "1.*",
-  -- branch = "v1",
-  ---@module 'blink.cmp'
-  ---@type blink.cmp.Config
   opts = {
     appearance = {
       use_nvim_cmp_as_default = true,
@@ -50,7 +47,7 @@ return {
         lazydev = {
           name = "LazyDev",
           module = "lazydev.integrations.blink",
-          score_offset = 1000,
+          score_offset = 100,
         },
         lsp = {
           name = "lsp",
