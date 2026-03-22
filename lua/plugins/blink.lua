@@ -53,18 +53,18 @@ return {
           name = "lsp",
           enabled = true,
           module = "blink.cmp.sources.lsp",
-          score_offset = 950,
+          score_offset = 900,
         },
         snippets = {
           name = "snippets",
           enabled = true,
           module = "blink.cmp.sources.snippets",
-          score_offset = 920,
+          score_offset = 950,
         },
         emoji = {
           module = "blink-emoji",
           name = "Emoji",
-          score_offset = 15,
+          score_offset = 1000,
           opts = {
             insert = true,
             ---@type string|table|fun():table
