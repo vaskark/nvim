@@ -49,18 +49,6 @@ return {
           module = "lazydev.integrations.blink",
           score_offset = 100,
         },
-        lsp = {
-          name = "lsp",
-          enabled = true,
-          module = "blink.cmp.sources.lsp",
-          score_offset = 900,
-        },
-        snippets = {
-          name = "snippets",
-          enabled = true,
-          module = "blink.cmp.sources.snippets",
-          score_offset = 950,
-        },
         emoji = {
           module = "blink-emoji",
           name = "Emoji",
