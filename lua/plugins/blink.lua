@@ -30,7 +30,12 @@ return {
         end,
         border = "single",
         draw = {
-          columns = { { "kind_icon", "label", gap = 1 }, { "kind" } },
+          columns = {
+            { "kind_icon" },
+            { "label", "label_description", gap = 1 },
+            { "kind" },
+            { "source_name" },
+          },
           treesitter = { "lsp" },
         },
       },
