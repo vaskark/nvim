@@ -55,5 +55,16 @@ opt.fillchars = {
   foldclose = "",
 }
 
--- no welcome message
-opt.shortmess:append({ I = true })
+opt.shortmess:append({ I = true }) -- no welcome message
+
+vim.diagnostic.config({ -- diagnostics
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN] = " ",
+      [vim.diagnostic.severity.HINT] = "󰠠 ",
+      [vim.diagnostic.severity.INFO] = " ",
+    },
+  },
+  virtual_text = false,
+})
