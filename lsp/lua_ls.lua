@@ -13,8 +13,9 @@ return {
   },
   settings = {
     Lua = {
+      codeLens = { enable = true },
+      hint = { enable = true, semicolon = "Disable" },
       runtime = { version = "LuaJIT" },
-      diagnostics = { globals = { "vim" } },
     },
   },
 }
