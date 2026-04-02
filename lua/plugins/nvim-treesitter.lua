@@ -7,11 +7,11 @@ return {
     dependencies = {
       "OXY2DEV/markview.nvim",
     },
-    
+
     init = function()
       vim.env.CC = "clang"
     end,
-  
+
     config = function()
       require("nvim-treesitter").install({
           "bash",
