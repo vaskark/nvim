@@ -2,7 +2,7 @@
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
 vim.cmd([[autocmd ColorScheme * highlight Normal guibg=none]])
 
--- simple LSP progress
+-- lsp progress
 vim.api.nvim_create_autocmd("LspProgress", {
   ---@param ev {data: {client_id: integer, params: lsp.ProgressParams}}
   callback = function(ev)
@@ -45,14 +45,14 @@ vim.api.nvim_create_autocmd("VimResized", {
 
 -- help buffers open to the right
 vim.api.nvim_create_autocmd("FileType", {
-  desc = "Automatically Split help Buffers to the right",
+  desc = "Automatically split help buffers to the right",
   pattern = "help",
   command = "wincmd L",
 })
 
--- wrap and check for spell in text filetypes
+-- wrap and check for spelling in text filetypes
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "text", "markdown", "gitcommit" },
+  pattern = { "text", "markdown", "gitcommit", "org" },
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
@@ -69,7 +69,9 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
   callback = function()
-    (vim.hl or vim.highlight).on_yank({ timeout = 300 })
+    vim.highlight.on_yank({ timeout = 300 })
   end,
 })
