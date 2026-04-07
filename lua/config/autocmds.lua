@@ -2,7 +2,7 @@
 vim.cmd([[autocmd ColorScheme * highlight StatusLine guibg=none]])
 vim.cmd([[autocmd ColorScheme * highlight Normal guibg=none]])
 
--- remove "[Process exited: 0]"
+-- remove "[Process exited 0]"
 vim.api.nvim_clear_autocmds({ group = "nvim.terminal", event = "TermClose" })
 
 -- lsp progress
