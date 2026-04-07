@@ -6,14 +6,16 @@ return {
     "OXY2DEV/markview.nvim",
   },
 
-  -- init = function()
-  --   vim.env.CC = "clang"
-  -- end,
+  init = function()
+    vim.env.CC = "gcc"
+  end,
 
   config = function()
     require("nvim-treesitter").install({
       "bash",
       "css",
+      "editorconfig",
+      "fish",
       "gitcommit",
       "git_config",
       "gitignore",
