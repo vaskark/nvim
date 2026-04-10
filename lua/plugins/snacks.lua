@@ -1,9 +1,7 @@
 return {
   "folke/snacks.nvim",
-  lazy = false,
   priority = 1000,
-  ---@diagnostic disable: undefined-global
-  ---@type snacks.Config
+  lazy = false,
   opts = {
     bigfile = { enabled = true },
     dashboard = {
@@ -39,7 +37,7 @@ return {
     explorer = { enabled = true, replace_netrw = true },
     image = { enabled = true },
     indent = {
-      enabled = false,
+      enabled = true,
       indent = { only_scope = true },
       scope = { underline = true },
       chunk = { enabled = true },
@@ -49,16 +47,7 @@ return {
       enabled = true,
       style = "compact", -- compact, fancy, minimal
     },
-    picker = {
-      enabled = true,
-      sources = {
-        -- buffers = {
-        --   layout = {
-        --     preset = "ivy",
-        --   },
-        -- },
-      },
-    },
+    picker = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
     scratch = { enabled = true },
@@ -168,7 +157,6 @@ return {
       desc = "Visual selection or word",
       mode = { "n", "x" },
     },
-    -- search
     {
       "<leader>s/",
       function()
@@ -275,20 +263,6 @@ return {
         Snacks.picker.lsp_type_definitions()
       end,
       desc = "Goto T[y]pe Definition",
-    },
-    {
-      "<leader>ss",
-      function()
-        Snacks.picker.lsp_symbols()
-      end,
-      desc = "LSP Symbols",
-    },
-    {
-      "<leader>sS",
-      function()
-        Snacks.picker.lsp_workspace_symbols()
-      end,
-      desc = "LSP Workspace Symbols",
     },
     -- other
     {
