@@ -1,52 +1,51 @@
--- global
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+local g = vim.g
+local o = vim.opt
 
--- local
-local opt = vim.opt
+g.mapleader = " "
+g.maplocalleader = " "
 
-opt.termguicolors = true
-opt.laststatus = 2
+o.termguicolors = true
+o.laststatus = 2
 
 vim.schedule(function()
-  opt.clipboard = "unnamedplus"
+  o.clipboard = "unnamedplus"
 end)
 
-opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
+o.expandtab = true
+o.shiftwidth = 2
+o.softtabstop = 2
+o.tabstop = 2
 
-opt.smartindent = true
-opt.autoindent = true
-opt.breakindent = true
+o.autoindent = true
+o.breakindent = true
+o.smartindent = true
 
-opt.ignorecase = true
-opt.smartcase = true
-opt.hlsearch = true
+o.hlsearch = true
+o.ignorecase = true
+o.smartcase = true
 
-opt.number = true
-opt.relativenumber = true
-opt.numberwidth = 2
-opt.wrap = true
-opt.cursorline = true
+o.cursorline = true
+o.number = true
+o.relativenumber = true
+o.numberwidth = 2
+o.wrap = false
 
-opt.signcolumn = "yes:1"
-opt.splitbelow = true
-opt.splitright = true
-opt.undofile = true
-opt.swapfile = false
-opt.mouse = "a"
-opt.timeoutlen = 300
-opt.updatetime = 250
-opt.scrolloff = 8
+o.mouse = "a"
+o.scrolloff = 8
+o.signcolumn = "yes:1"
+o.splitbelow = true
+o.splitright = true
+o.swapfile = false
+o.timeoutlen = 300
+o.updatetime = 250
+o.undofile = true
 
-opt.virtualedit = "block"
-opt.inccommand = "split"
+o.inccommand = "split"
+o.virtualedit = "block"
 
-opt.fillchars = {
+o.fillchars = {
   eob = " ",
   fold = " ",
   foldopen = "",
@@ -55,9 +54,9 @@ opt.fillchars = {
   foldclose = "",
 }
 
-opt.shortmess:append({ I = true }) -- no welcome message
+o.shortmess:append({ I = true })
 
-vim.diagnostic.config({ -- diagnostics
+vim.diagnostic.config({
   signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = " ",
