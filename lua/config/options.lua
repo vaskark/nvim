@@ -1,8 +1,4 @@
-local g = vim.g
 local o = vim.opt
-
-g.mapleader = " "
-g.maplocalleader = " "
 
 o.termguicolors = true
 o.laststatus = 2

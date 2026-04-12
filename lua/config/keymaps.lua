@@ -1,4 +1,9 @@
+local g = vim.g
 local map = vim.keymap.set
+
+-- leader
+g.mapleader = " "
+g.maplocalleader = " "
 
 -- save
 map({ "n", "i" }, "<C-s>", "<cmd> w <cr>", { desc = "Save File" })
