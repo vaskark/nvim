@@ -50,7 +50,7 @@ o.fillchars = {
   foldclose = "",
 }
 
-o.shortmess:append({ I = true })
+o.shortmess:append({ I = true }) -- message screen
 
 vim.diagnostic.config({
   signs = {
