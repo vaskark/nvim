@@ -37,7 +37,7 @@ return {
     explorer = { enabled = true, replace_netrw = true },
     image = { enabled = true },
     indent = {
-      enabled = true,
+      enabled = false,
       indent = { only_scope = true },
       scope = { underline = true },
       chunk = { enabled = true },
